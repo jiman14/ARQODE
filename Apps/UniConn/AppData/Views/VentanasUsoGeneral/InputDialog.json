@@ -1,0 +1,255 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Dialog name",
+    "Message",
+    "Dialog result",
+    "Result Text"
+  ],
+  "Controls": [
+    {
+      "Guid": "InputDialog",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.VENTANAS_USO_GENERAL.InputDialog",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 649,
+          "Height": 179
+        },
+        "Text": "Entrada de datos",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PContenido",
+        "panel1"
+      ]
+    },
+    {
+      "Guid": "PContenido",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PTextBox",
+        "PLabel"
+      ]
+    },
+    {
+      "Guid": "PTextBox",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "textBox1"
+      ]
+    },
+    {
+      "Guid": "textBox1",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 605,
+          "Height": 41
+        },
+        "Location": {
+          "X": 16,
+          "Y": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "PLabel",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 633,
+          "Height": 38
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "Label1"
+      ]
+    },
+    {
+      "Guid": "Label1",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 42,
+          "Height": 16
+        },
+        "Location": {
+          "X": 13,
+          "Y": 13
+        },
+        "Text": "label1",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "panel1",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 633,
+          "Height": 56
+        },
+        "Dock": "Bottom",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "BCancelar",
+        "BAceptar"
+      ]
+    },
+    {
+      "Guid": "BCancelar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 101,
+          "Height": 30
+        },
+        "Location": {
+          "X": 413,
+          "Y": 14
+        },
+        "TabIndex": 2,
+        "Text": "Cancelar",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Común.Cancelar diálogo"
+      }
+    },
+    {
+      "Guid": "BAceptar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 101,
+          "Height": 30
+        },
+        "Location": {
+          "X": 520,
+          "Y": 14
+        },
+        "TabIndex": 1,
+        "Text": "Aceptar",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Común.Aceptar diálogo"
+      }
+    }
+  ]
+}

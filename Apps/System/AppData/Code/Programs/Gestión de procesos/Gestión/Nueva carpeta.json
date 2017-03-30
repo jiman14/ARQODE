@@ -1,0 +1,20 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Nueva carpeta",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "1bcb9da8-47ba-457f-bf60-51e9f3031514",
+      "Name": "Nueva carpeta",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

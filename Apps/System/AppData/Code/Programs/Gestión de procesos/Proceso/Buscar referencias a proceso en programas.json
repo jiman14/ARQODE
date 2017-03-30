@@ -1,0 +1,45 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Buscar referencias a proceso en programas",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Precargar TablaB",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Precargar TablaB"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "773923b8-4e21-4dc6-afea-6191de56ef68",
+      "Name": "Buscar referencias a proceso en programas",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "Tabla resultados": "ARQODE_UI.TablaB.Data Source",
+        "Num columna con path": "ARQODE_UI.TablaB.Num columna con path"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Abrir ventana",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Abrir ventana"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

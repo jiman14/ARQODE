@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "Menú contextual de programas",
+  "processes": [
+    {
+      "Guid": "332d66f1-a59c-4055-9ed5-accea9ec4f65",
+      "Name": "Visibilidad opciones de menú",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiAzMzJkNjZmMS1hNTljLTQwNTUtOWVkNS1hY2NlYTllYzRmNjUNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFSUU9ERV9VSS5HZXN0b3JQcm9ncmFtYXMuQ1ZlbnRhbmFQcm9ncmFtYXMgQ1ZlbnRhbmFQcm9ncmFtYXMgPSBuZXcgQVJRT0RFX1VJLkdlc3RvclByb2dyYW1hcy5DVmVudGFuYVByb2dyYW1hcyh2bSk7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgQ1ZlbnRhbmFQcm9ncmFtYXMuY29udGV4dE1lbnVfUHJvZ3JhbWFzLkl0ZW1zWzJdLkVuYWJsZWQgPSB0cnVlOw0KDQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0VORCBDT0RFIFBSQ0dVSUQ6IDMzMmQ2NmYxLWE1OWMtNDA1NS05ZWQ1LWFjY2VhOWVjNGY2NQ=="
+    }
+  ]
+}

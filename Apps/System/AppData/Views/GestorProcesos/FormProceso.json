@@ -1,0 +1,491 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Proceso",
+    "FicheroProceso",
+    "Namespace programa activo"
+  ],
+  "Controls": [
+    {
+      "Guid": "FormProceso",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.FormProceso",
+      "Type": "System.Windows.Forms.UserControl",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 767,
+          "Height": 544
+        },
+        "Text": "FormProceso",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PInfo"
+      ]
+    },
+    {
+      "Guid": "PInfo",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "BGuardar",
+        "label8",
+        "TBDefault_Configuration",
+        "TBConfiguration",
+        "label7",
+        "TBOutputs",
+        "TBInputs",
+        "label6",
+        "label5",
+        "LGUID",
+        "TBDescription",
+        "TBName",
+        "TBVersion",
+        "label4",
+        "label3",
+        "label2",
+        "label1"
+      ]
+    },
+    {
+      "Guid": "BGuardar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 156,
+          "Height": 33
+        },
+        "Location": {
+          "X": 599,
+          "Y": 8
+        },
+        "TabIndex": 5,
+        "Text": "Save",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Gestión de Procesos.Guardar datos proceso"
+      }
+    },
+    {
+      "Guid": "label8",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 98,
+          "Height": 35
+        },
+        "Location": {
+          "X": 24,
+          "Y": 474
+        },
+        "TabIndex": 12,
+        "Text": "Default configuration:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopRight"
+      }
+    },
+    {
+      "Guid": "TBDefault_Configuration",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 61
+        },
+        "Location": {
+          "X": 128,
+          "Y": 471
+        },
+        "TabIndex": 6,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "TBConfiguration",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 93
+        },
+        "Location": {
+          "X": 131,
+          "Y": 372
+        },
+        "TabIndex": 4,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "label7",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 98,
+          "Height": 16
+        },
+        "Location": {
+          "X": 26,
+          "Y": 386
+        },
+        "TabIndex": 9,
+        "Text": "Configuration:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "TBOutputs",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 97
+        },
+        "Location": {
+          "X": 131,
+          "Y": 269
+        },
+        "TabIndex": 3,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "TBInputs",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 91
+        },
+        "Location": {
+          "X": 130,
+          "Y": 172
+        },
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "label6",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 60,
+          "Height": 16
+        },
+        "Location": {
+          "X": 65,
+          "Y": 272
+        },
+        "TabIndex": 6,
+        "Text": "Outputs:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label5",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 50,
+          "Height": 16
+        },
+        "Location": {
+          "X": 74,
+          "Y": 175
+        },
+        "TabIndex": 4,
+        "Text": "Inputs:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "LGUID",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 444,
+          "Height": 43
+        },
+        "Location": {
+          "X": 128,
+          "Y": 21
+        },
+        "TabIndex": 2,
+        "Text": "PROCESS_GUID",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "TBDescription",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 58
+        },
+        "Location": {
+          "X": 130,
+          "Y": 108
+        },
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "TBName",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 627,
+          "Height": 22
+        },
+        "Location": {
+          "X": 130,
+          "Y": 81
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "TBVersion",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 100,
+          "Height": 22
+        },
+        "Location": {
+          "X": 655,
+          "Y": 47
+        },
+        "TabIndex": 7,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "label4",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 59,
+          "Height": 16
+        },
+        "Location": {
+          "X": 594,
+          "Y": 48
+        },
+        "Text": "Version:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label3",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 83,
+          "Height": 16
+        },
+        "Location": {
+          "X": 48,
+          "Y": 111
+        },
+        "Text": "Description:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label2",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 49,
+          "Height": 16
+        },
+        "Location": {
+          "X": 82,
+          "Y": 84
+        },
+        "Text": "Name:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label1",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 44,
+          "Height": 16
+        },
+        "Location": {
+          "X": 88,
+          "Y": 21
+        },
+        "Text": "GUID:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    }
+  ]
+}

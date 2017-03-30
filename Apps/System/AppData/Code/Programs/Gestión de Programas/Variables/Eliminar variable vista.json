@@ -1,0 +1,20 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Eliminar variable vista",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestión del proceso activo",
+      "Guid": "c3697a76-651b-43ca-b89e-a035993a9d23",
+      "Name": "Eliminar variable vista",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Mostrar errores gráficos",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de errores.Errores gráficos",
+      "Guid": "7536ce3d-08b4-4489-84ea-5a48752c7a83",
+      "Name": "Mostrar errores gráficos",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Aplicación activa": "GestorProgramas.VentanaProgramas.Aplicación activa"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Lanzar aplicación",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Aplicación",
+      "Guid": "c07b0b72-8ada-4945-91c4-0c49a542736f",
+      "Name": "Lanzar aplicación",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "Aplicación activa": "GestorProgramas.VentanaProgramas.Aplicación activa"
+      },
+      "Edit_code": "1"
+    }
+  ]
+}

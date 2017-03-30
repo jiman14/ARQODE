@@ -1,0 +1,63 @@
+using System; 
+using TControls; 
+using Newtonsoft.Json.Linq;
+
+namespace TLogic.ARQODE_UI.ARQODE_UI
+{ 
+public class CTablaB
+ { 
+String _JSON = "ew0KICAiJHNjaGVtYSI6ICIuLlxcU2NoZW1hc1xcU2NoZW1hX2Jhc2VfY29udHJvbC5qc29uIiwNCiAgImRlc2NyaXB0aW9uIjogIiIsDQogICJWYXJpYWJsZXMiOiBbDQogICAgIkRhdGEgU291cmNlIiwNCiAgICAiTnVtIGNvbHVtbmEgY29uIHBhdGgiDQogIF0sDQogICJDb250cm9scyI6IFsNCiAgICB7DQogICAgICAiR3VpZCI6ICJUYWJsYUIiLA0KICAgICAgIkNsYXNzX1BhdGgiOiAiQVJRT0RFX1ZJU1VBTF9FRElUT1IuVkVOVEFOQVNfVVNPX0dFTkVSQUwuVGFibGFCIiwNCiAgICAgICJUeXBlIjogIlN5c3RlbS5XaW5kb3dzLkZvcm1zLkZvcm0iLA0KICAgICAgIkRlc2NyaXB0aW9uIjogIiIsDQogICAgICAiVmVyc2lvbiI6ICIxLjAuMC4wIiwNCiAgICAgICJDb25maWd1cmF0aW9uIjogew0KICAgICAgICAiU2l6ZSI6IHsNCiAgICAgICAgICAiV2lkdGgiOiA3MjUsDQogICAgICAgICAgIkhlaWdodCI6IDQ0Nw0KICAgICAgICB9LA0KICAgICAgICAiUGFkZGluZyI6IHsNCiAgICAgICAgICAiVG9wIjogMywNCiAgICAgICAgICAiUmlnaHQiOiAzLA0KICAgICAgICAgICJCb3R0b20iOiAzLA0KICAgICAgICAgICJMZWZ0IjogMw0KICAgICAgICB9DQogICAgICB9LA0KICAgICAgIkNvbnRyb2xzIjogWw0KICAgICAgICAicGFuZWwxIg0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAgICAgIkd1aWQiOiAicGFuZWwxIiwNCiAgICAgICJUeXBlIjogIlN5c3RlbS5XaW5kb3dzLkZvcm1zLlBhbmVsIiwNCiAgICAgICJEZXNjcmlwdGlvbiI6ICIiLA0KICAgICAgIlZlcnNpb24iOiAiNC42LjE1OTAuMCIsDQogICAgICAiQ29uZmlndXJhdGlvbiI6IHsNCiAgICAgICAgIkRvY2siOiAiRmlsbCIsDQogICAgICAgICJQYWRkaW5nIjogew0KICAgICAgICAgICJUb3AiOiAzLA0KICAgICAgICAgICJSaWdodCI6IDMsDQogICAgICAgICAgIkJvdHRvbSI6IDMsDQogICAgICAgICAgIkxlZnQiOiAzDQogICAgICAgIH0sDQogICAgICAgICJBdXRvU2Nyb2xsTWluU2l6ZSI6IHsNCiAgICAgICAgICAiV2lkdGgiOiAwLA0KICAgICAgICAgICJIZWlnaHQiOiAwDQogICAgICAgIH0sDQogICAgICAgICJWZXJ0aWNhbFNjcm9sbCI6IHsNCiAgICAgICAgICAiRW5hYmxlZCI6IHRydWUNCiAgICAgICAgfSwNCiAgICAgICAgIkhvcml6b250YWxTY3JvbGwiOiB7DQogICAgICAgICAgIkVuYWJsZWQiOiB0cnVlDQogICAgICAgIH0NCiAgICAgIH0sDQogICAgICAiQ29udHJvbHMiOiBbDQogICAgICAgICJCdXNjYXIiLA0KICAgICAgICAiVGFibGEiLA0KICAgICAgICAiVGV4dEJveDEiDQogICAgICBdDQogICAgfSwNCiAgICB7DQogICAgICAiR3VpZCI6ICJCdXNjYXIiLA0KICAgICAgIlR5cGUiOiAiU3lzdGVtLldpbmRvd3MuRm9ybXMuQnV0dG9uIiwNCiAgICAgICJEZXNjcmlwdGlvbiI6ICIiLA0KICAgICAgIlZlcnNpb24iOiAiNC42LjE1OTAuMCIsDQogICAgICAiQ29uZmlndXJhdGlvbiI6IHsNCiAgICAgICAgIlNpemUiOiB7DQogICAgICAgICAgIldpZHRoIjogMjMsDQogICAgICAgICAgIkhlaWdodCI6IDI4DQogICAgICAgIH0sDQogICAgICAgICJMb2NhdGlvbiI6IHsNCiAgICAgICAgICAiWCI6IDY4MCwNCiAgICAgICAgICAiWSI6IDkNCiAgICAgICAgfSwNCiAgICAgICAgIlRhYkluZGV4IjogMywNCiAgICAgICAgIlRleHQiOiAiPiIsDQogICAgICAgICJQYWRkaW5nIjogew0KICAgICAgICAgICJUb3AiOiAzLA0KICAgICAgICAgICJSaWdodCI6IDMsDQogICAgICAgICAgIkJvdHRvbSI6IDMsDQogICAgICAgICAgIkxlZnQiOiAzDQogICAgICAgIH0NCiAgICAgIH0sDQogICAgICAiRXZlbnRzIjogew0KICAgICAgICAiQ2xpY2siOiAiVXRpbGlkYWRlcy5WaXNvciBEYXRhZ3JpZHZpZXcuRmlsdHJhciBkYXRvcyINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJHdWlkIjogIlRhYmxhIiwNCiAgICAgICJUeXBlIjogIlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlldyIsDQogICAgICAiRGVzY3JpcHRpb24iOiAiIiwNCiAgICAgICJWZXJzaW9uIjogIjQuNi4xNTkwLjAiLA0KICAgICAgIkNvbmZpZ3VyYXRpb24iOiB7DQogICAgICAgICJTaXplIjogew0KICAgICAgICAgICJXaWR0aCI6IDcwOSwNCiAgICAgICAgICAiSGVpZ2h0IjogMzY2DQogICAgICAgIH0sDQogICAgICAgICJMb2NhdGlvbiI6IHsNCiAgICAgICAgICAiWCI6IDAsDQogICAgICAgICAgIlkiOiA0Mw0KICAgICAgICB9LA0KICAgICAgICAiVGFiSW5kZXgiOiAyLA0KICAgICAgICAiUGFkZGluZyI6IHsNCiAgICAgICAgICAiVG9wIjogMywNCiAgICAgICAgICAiUmlnaHQiOiAzLA0KICAgICAgICAgICJCb3R0b20iOiAzLA0KICAgICAgICAgICJMZWZ0IjogMw0KICAgICAgICB9LA0KICAgICAgICAiRWRpdE1vZGUiOiAiRWRpdE9uS2V5c3Ryb2tlT3JGMiIsDQogICAgICAgICJTZWxlY3Rpb25Nb2RlIjogIkZ1bGxSb3dTZWxlY3QiLA0KICAgICAgICAiU2Nyb2xsQmFycyI6ICJCb3RoIiwNCiAgICAgICAgIkFsbG93VXNlclRvQWRkUm93cyI6IGZhbHNlLA0KICAgICAgICAiQWxsb3dVc2VyVG9EZWxldGVSb3dzIjogZmFsc2UsDQogICAgICAgICJBbGxvd1VzZXJUb09yZGVyQ29sdW1ucyI6IGZhbHNlLA0KICAgICAgICAiQWxsb3dVc2VyVG9SZXNpemVDb2x1bW5zIjogdHJ1ZSwNCiAgICAgICAgIkFsbG93VXNlclRvUmVzaXplUm93cyI6IHRydWUsDQogICAgICAgICJBdXRvU2l6ZUNvbHVtbnNNb2RlIjogIkZpbGwiLA0KICAgICAgICAiTXVsdGlTZWxlY3QiOiBmYWxzZSwNCiAgICAgICAgIkNvbHVtbkhlYWRlcnNIZWlnaHRTaXplTW9kZSI6ICJBdXRvU2l6ZSIsDQogICAgICAgICJSb3dIZWFkZXJzV2lkdGhTaXplTW9kZSI6ICJFbmFibGVSZXNpemluZyIsDQogICAgICAgICJBbHRlcm5hdGluZ1Jvd3NEZWZhdWx0Q2VsbFN0eWxlIjoge30NCiAgICAgIH0sDQogICAgICAiRXZlbnRzIjogew0KICAgICAgICAiQ2VsbENvbnRlbnRDbGljayI6ICJVdGlsaWRhZGVzLlZpc29yIERhdGFncmlkdmlldy5CdXNjYXIgcHJvZ3JhbWEgbyBwcm9jZXNvIg0KICAgICAgfQ0KICAgIH0sDQogICAgew0KICAgICAgIkd1aWQiOiAiVGV4dEJveDEiLA0KICAgICAgIlR5cGUiOiAiU3lzdGVtLldpbmRvd3MuRm9ybXMuVGV4dEJveCIsDQogICAgICAiRGVzY3JpcHRpb24iOiAiIiwNCiAgICAgICJWZXJzaW9uIjogIjQuNi4xNTkwLjAiLA0KICAgICAgIkNvbmZpZ3VyYXRpb24iOiB7DQogICAgICAgICJTaXplIjogew0KICAgICAgICAgICJXaWR0aCI6IDY2MiwNCiAgICAgICAgICAiSGVpZ2h0IjogMjMNCiAgICAgICAgfSwNCiAgICAgICAgIkxvY2F0aW9uIjogew0KICAgICAgICAgICJYIjogMTIsDQogICAgICAgICAgIlkiOiAxMg0KICAgICAgICB9LA0KICAgICAgICAiVGFiSW5kZXgiOiAxLA0KICAgICAgICAiUGFkZGluZyI6IHsNCiAgICAgICAgICAiVG9wIjogMywNCiAgICAgICAgICAiUmlnaHQiOiAzLA0KICAgICAgICAgICJCb3R0b20iOiAzLA0KICAgICAgICAgICJMZWZ0IjogMw0KICAgICAgICB9DQogICAgICB9LA0KICAgICAgIkV2ZW50cyI6IHsNCiAgICAgICAgIlRleHRDaGFuZ2VkIjogIlV0aWxpZGFkZXMuVmlzb3IgRGF0YWdyaWR2aWV3LkZpbHRyYXIgZGF0b3MiDQogICAgICB9DQogICAgfQ0KICBdDQp9";
+public JObject MappedView { get { return JObject.Parse(System.Text.UTF8Encoding.UTF8.GetString(Convert.FromBase64String(_JSON))); } } 
+public System.Windows.Forms.Form TablaB;
+public CView.CtrlStruct TablaB_cstr;
+public object TablaB_vars(String var, object value = null) 
+{ 
+	if (value != null)  view.CtrlVars("ARQODE_UI.TablaB")[var] = value; 
+	return (object)view.CtrlVars("ARQODE_UI.TablaB")[var];
+}
+public System.Windows.Forms.Panel panel1;
+public CView.CtrlStruct panel1_cstr;
+public object panel1_vars(String var, object value = null) 
+{ 
+	if (value != null)  view.CtrlVars("panel1")[var] = value; 
+	return (object)view.CtrlVars("panel1")[var];
+}
+public System.Windows.Forms.Button Buscar;
+public CView.CtrlStruct Buscar_cstr;
+public object Buscar_vars(String var, object value = null) 
+{ 
+	if (value != null)  view.CtrlVars("Buscar")[var] = value; 
+	return (object)view.CtrlVars("Buscar")[var];
+}
+public System.Windows.Forms.DataGridView Tabla;
+public CView.CtrlStruct Tabla_cstr;
+public object Tabla_vars(String var, object value = null) 
+{ 
+	if (value != null)  view.CtrlVars("Tabla")[var] = value; 
+	return (object)view.CtrlVars("Tabla")[var];
+}
+public System.Windows.Forms.TextBox TextBox1;
+public CView.CtrlStruct TextBox1_cstr;
+public object TextBox1_vars(String var, object value = null) 
+{ 
+	if (value != null)  view.CtrlVars("TextBox1")[var] = value; 
+	return (object)view.CtrlVars("TextBox1")[var];
+}
+public object Data_Source { get { return (view.vars.ContainsKey("Data Source"))? (object)view.vars["Data Source"]: null; } set { view.vars["Data Source"] = value; } }
+public object Num_columna_con_path { get { return (view.vars.ContainsKey("Num columna con path"))? (object)view.vars["Num columna con path"]: null; } set { view.vars["Num columna con path"] = value; } }
+public CView view; 
+public CTablaB (CViewsManager vm) { view = (vm.getFirstView("ARQODE_UI.TablaB") != null)? vm.getFirstView("ARQODE_UI.TablaB"): vm.AddView("ARQODE_UI.TablaB");
+TablaB = (System.Windows.Forms.Form) view.getCtrl("ARQODE_UI.TablaB");
+TablaB_cstr = view.getCtrlStruct("ARQODE_UI.TablaB");
+panel1 = (System.Windows.Forms.Panel) view.getCtrl("panel1");
+panel1_cstr = view.getCtrlStruct("panel1");
+Buscar = (System.Windows.Forms.Button) view.getCtrl("Buscar");
+Buscar_cstr = view.getCtrlStruct("Buscar");
+Tabla = (System.Windows.Forms.DataGridView) view.getCtrl("Tabla");
+Tabla_cstr = view.getCtrlStruct("Tabla");
+TextBox1 = (System.Windows.Forms.TextBox) view.getCtrl("TextBox1");
+TextBox1_cstr = view.getCtrlStruct("TextBox1");
+ }}
+
+}
+

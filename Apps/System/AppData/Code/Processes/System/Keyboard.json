@@ -1,0 +1,16 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "KeyboardHook register key",
+      "Name": "KeyboardHook register key",
+      "Description": "KeyboardHook register key",
+      "Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Version": "1.0",
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBLZXlib2FyZEhvb2sgcmVnaXN0ZXIga2V5DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdm0uZ2V0TWFpblZpZXcoKS5NZXRob2RDYWxsKCJnbG9iYWwgSG9va0tleSIsICJSZWdpc3RlciBjb2RlIGZvciByZXN0b3JlIik7DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0VORCBDT0RFIFBSQ0dVSUQ6IEtleWJvYXJkSG9vayByZWdpc3RlciBrZXk="
+    }
+  ]
+}

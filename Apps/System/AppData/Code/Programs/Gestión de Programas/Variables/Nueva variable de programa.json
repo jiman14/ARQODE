@@ -1,0 +1,20 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Nueva variable de programa",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestión del proceso activo",
+      "Guid": "b8c926b9-1f1f-4575-b0d6-abafca3997d9",
+      "Name": "Nueva variable de programa",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

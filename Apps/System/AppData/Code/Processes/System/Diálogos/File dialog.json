@@ -1,0 +1,21 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "File dialog",
+  "processes": [
+    {
+      "Guid": "d7c66f82-4473-4e8c-b556-0f6c6509782e",
+      "Name": "Seleccionar fichero",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [
+        "Filtros"
+      ],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [
+        "Fichero seleccionado"
+      ],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBkN2M2NmY4Mi00NDczLTRlOGMtYjU1Ni0wZjZjNjUwOTc4MmUNCg0KICAgICAgICAgICAgICAgIFN0cmluZyBDX0ZpbHRyb3MgPSBDb25maWdfc3RyKCJGaWx0cm9zIik7DQogICAgICAgICAgICAgICAgT3BlbkZpbGVEaWFsb2cgb2ZkID0gbmV3IE9wZW5GaWxlRGlhbG9nKCk7DQogICAgICAgICAgICAgICAgb2ZkLkZpbHRlciA9IENfRmlsdHJvczsNCiAgICAgICAgICAgICAgICBpZiAob2ZkLlNob3dEaWFsb2coKSA9PSBEaWFsb2dSZXN1bHQuT0spDQogICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICBPdXRwdXRzKCJGaWNoZXJvIHNlbGVjY2lvbmFkbyIsIG9mZC5GaWxlTmFtZSk7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIGVsc2UNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgIE91dHB1dHMoIkZpY2hlcm8gc2VsZWNjaW9uYWRvIiwgIiIpOw0KICAgICAgICAgICAgICAgIH0NCgovL0VORCBDT0RFIFBSQ0dVSUQ6IGQ3YzY2ZjgyLTQ0NzMtNGU4Yy1iNTU2LTBmNmM2NTA5NzgyZQ=="
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Cargar programas",
+  "Parallel_execution": false,
+  "Description": "Cargar programas",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestor de programas",
+      "Guid": "Cargar programas",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "Gestión de Procesos.Cargar procesos"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestión del proceso activo",
+      "Guid": "Cargar proceso activo",
+      "Name": "Cargar proceso activo",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "Proceso de programa activo": "GestorProgramas.VentanaProgramas.Proceso de programa activo"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Menú principal del programa",
+      "Guid": "caf36585-f6eb-4f3f-b0ec-fac689ce4eac",
+      "Name": "Mapear menús con programas",
+      "Description": "Hace el call del programa especificado en configuración para cada botón",
+      "Configuration": {
+        "Buscar en todo": "Buscador.Buscar en todo",
+        "Buscar en programas": "Buscador.Buscar en programas",
+        "Buscar en procesos": "Buscador.Buscar en procesos",
+        "Abrir debug": "Gestión del debug.Ver debug",
+        "Abrir errores de programa": "Gestión de errores.Mostrar traza de errores de programa",
+        "Abrir errores UI": "Gestión de errores.Mostrar errores gráficos",
+        "Activar App": "Gesitón de aplicaciones.Activar app",
+        "Chequear IOC": "Gestión de errores.Chequear IOC",
+        "Auto chequear errores": "Gestión de errores.Auto chequear errores",
+        "Histórico de programas": "Gestión de Programas.Información.Ver histórico de programas",
+        "Run app": "Gestión de Programas.Aplicación.Lanzar aplicación",
+        "Map UI": "Map UI.Abrir mapeos UI"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

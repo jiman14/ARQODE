@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Eliminar proceso",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "246c3776-b78e-4702-b593-78ce31b6fef7",
+      "Name": "Eliminar proceso",
+      "Description": "",
+      "Configuration": {
+        "Call a buscar referencias": "Gestión de procesos.Proceso.Buscar referencias a proceso en programas"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [ ],
+  "Controls": [
+    {
+      "Guid": "MainView",
+      "Class_Path": "",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 500,
+          "Height": 300
+        },
+        "Text": "Main view form",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "StartPosition": "CenterScreen"
+      },
+      "Controls": [       
+      ],
+      "Events": {
+        "Load": "",
+      }
+    },
+  ],  
+}

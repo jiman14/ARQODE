@@ -1,0 +1,36 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Chequear IOC",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [
+    "Errores reportados"
+  ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestor de programas",
+      "Guid": "4e18d420-853d-4652-9f0f-dd41587094d4",
+      "Name": "Chequear integridad de los procesos de los programas",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "-Errores reportados": "Errores reportados"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de errores.Errores de programa",
+      "Guid": "20363399-d305-4e90-a478-dc16fb83fff6",
+      "Name": "Errores IOC",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Errores reportados": "Errores reportados"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

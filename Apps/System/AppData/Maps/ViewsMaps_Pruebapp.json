@@ -1,0 +1,9 @@
+{
+  "classes": [
+    {
+      "Namespace": "Main.MainView.json",
+      "TimeStamp": "03/03/2017 17:39:41",
+      "Maps": "namespace TLogic.Views.Main\r\n { \r\npublic class CMainView\r\n { \r\nString _JSON = \"ew0KICAiJHNjaGVtYSI6ICIuLlxcU2NoZW1hc1xcU2NoZW1hX2Jhc2VfY29udHJvbC5qc29uIiwNCiAgImRlc2NyaXB0aW9uIjogIiIsDQogICJWYXJpYWJsZXMiOiBbXSwNCiAgIkNvbnRyb2xzIjogWw0KICAgIHsNCiAgICAgICJHdWlkIjogIk1haW5WaWV3IiwNCiAgICAgICJDbGFzc19QYXRoIjogIiIsDQogICAgICAiVHlwZSI6ICJTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Gb3JtIiwNCiAgICAgICJEZXNjcmlwdGlvbiI6ICIiLA0KICAgICAgIlZlcnNpb24iOiAiMS4wLjAuMCIsDQogICAgICAiQ29uZmlndXJhdGlvbiI6IHsNCiAgICAgICAgIlNpemUiOiB7DQogICAgICAgICAgIldpZHRoIjogNTAwLA0KICAgICAgICAgICJIZWlnaHQiOiAzMDANCiAgICAgICAgfSwNCiAgICAgICAgIlRleHQiOiAiTWFpbiB2aWV3IGZvcm0iLA0KICAgICAgICAiUGFkZGluZyI6IHsNCiAgICAgICAgICAiVG9wIjogMywNCiAgICAgICAgICAiUmlnaHQiOiAzLA0KICAgICAgICAgICJCb3R0b20iOiAzLA0KICAgICAgICAgICJMZWZ0IjogMw0KICAgICAgICB9LA0KICAgICAgICAiU3RhcnRQb3NpdGlvbiI6ICJDZW50ZXJTY3JlZW4iDQogICAgICB9LA0KICAgICAgIkNvbnRyb2xzIjogW10sDQogICAgICAiRXZlbnRzIjogew0KICAgICAgICAiTG9hZCI6ICIiDQogICAgICB9DQogICAgfQ0KICBdDQp9\";\r\npublic JObject MappedView { get { return JObject.Parse(System.Text.UTF8Encoding.UTF8.GetString(Convert.FromBase64String(_JSON))); } } \r\npublic System.Windows.Forms.Form MainView;\r\npublic CView.CtrlStruct MainView_cstr;\r\npublic object MainView_vars(String var, object value = null) \r\n{ \r\n\tif (value != null)  view.CtrlVars(\"Main.MainView\")[var] = value; \r\n\treturn (object)view.CtrlVars(\"Main.MainView\")[var];\r\n}\r\npublic CView view; \r\npublic CMainView (CViewsManager vm) { view = (vm.getFirstView(\"Main.MainView\") != null)? vm.getFirstView(\"Main.MainView\"): vm.AddView(\"Main.MainView\");\r\nMainView = (System.Windows.Forms.Form) view.getCtrl(\"Main.MainView\");\r\nMainView_cstr = view.getCtrlStruct(\"Main.MainView\");\r\n }}\r\n\r\n}\r\n"
+    }
+  ]
+}

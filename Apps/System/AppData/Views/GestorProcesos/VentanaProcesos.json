@@ -1,0 +1,363 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [],
+  "Controls": [
+    {
+      "Guid": "VentanaProcesos",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.VentanaProcesos",
+      "Type": "System.Windows.Forms.UserControl",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 792,
+          "Height": 554
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "tabProcesos",
+        "PLeft"
+      ]
+    },
+    {
+      "Guid": "tabProcesos",
+      "Type": "System.Windows.Forms.TabControl",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "Pcontent",
+        "PProcessPanel"
+      ]
+    },
+    {
+      "Guid": "Pcontent",
+      "Type": "System.Windows.Forms.TabPage",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 384,
+          "Height": 528
+        },
+        "Location": {
+          "X": 4,
+          "Y": 22
+        },
+        "Text": "Base process",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      }
+    },
+    {
+      "Guid": "PProcessPanel",
+      "Type": "System.Windows.Forms.TabPage",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 384,
+          "Height": 528
+        },
+        "Location": {
+          "X": 4,
+          "Y": 22
+        },
+        "TabIndex": 1,
+        "Text": "Process",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      }
+    },
+    {
+      "Guid": "PLeft",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 400,
+          "Height": 554
+        },
+        "Dock": "Left",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PProcessList",
+        "PProcessDir"
+      ]
+    },
+    {
+      "Guid": "PProcessList",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "LProcess"
+      ]
+    },
+    {
+      "Guid": "LProcess",
+      "Type": "System.Windows.Forms.ListBox",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "SelectedIndexChanged": "Gestión de Procesos.Cargar datos de proceso"
+      }
+    },
+    {
+      "Guid": "contextMenu_Proceso",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 111,
+          "Height": 136
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        },
+        "Menu items": [
+          {
+            "Name": "Nuevo",
+            "ShortcutKeys": "Ctrl+N",
+            "Program": "Gestión de Procesos.Proceso.Nuevo proceso"
+          },
+          {
+            "Name": "Cortar",
+            "ShortcutKeys": "Ctrl+X",
+            "Program": "Gestión de Procesos.Proceso.Cortar"
+          },
+          {
+            "Name": "Pegar",
+            "ShortcutKeys": "Ctrl+V",
+            "Program": "Gestión de Procesos.Proceso.Pegar"
+          },
+          {
+            "Name": "Eliminar",
+            "ShortcutKeys": "None",
+            "Program": "Gestión de Procesos.Proceso.Eliminar proceso"
+          },
+          {
+            "Name": "Asignar al programa activo",
+            "ShortcutKeys": "Ctrl+A",
+            "Program": "Gestión de Procesos.Proceso.Asignar proceso"
+          },
+          {
+            "Name": "Buscar referencias",
+            "ShortcutKeys": "Ctrl+B",
+            "Program": "Gestión de procesos.Buscar referencias a proceso en programas"
+          }
+        ]
+      },
+      "Events": {
+        "toolStripMenuItem1": "Gestión de Procesos.Proceso.Nuevo proceso",
+        "cortarToolStripMenuItem1": "Gestión de Procesos.Proceso.Cortar",
+        "pegarToolStripMenuItem1": "Gestión de Procesos.Proceso.Pegar",
+        "eliminarToolStripMenuItem1": "Gestión de Procesos.Proceso.Eliminar proceso",
+        "asignarAlProgramaActivoToolStripMenuItem": "Gestión de Procesos.Proceso.Asignar proceso",
+        "buscarReferenciasToolStripMenuItem": "Gestión de procesos.Proceso.Buscar referencias a proceso en programas"
+      }
+    },
+    {
+      "Guid": "PProcessDir",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 400,
+          "Height": 300
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "TV_Processes"
+      ]
+    },
+    {
+      "Guid": "TV_Processes",
+      "Type": "System.Windows.Forms.TreeView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "AfterSelect": "Gestión de procesos.Cargar subprocesos"
+      }
+    },
+    {
+      "Guid": "contextMenu_Procesos",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 111,
+          "Height": 136
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        },
+        "Menu items": [
+          {
+            "Name": "Nuevo",
+            "ShortcutKeys": "Ctrl+N",
+            "Program": "Gestión de Procesos.Gestión.Abrir ficha de proceso"
+          },
+          {
+            "Name": "Cortar",
+            "ShortcutKeys": "Ctrl+X",
+            "Program": "Gestión de Procesos.Gestión.Cortar"
+          },
+          {
+            "Name": "Pegar",
+            "ShortcutKeys": "Ctrl+V",
+            "Program": "Gestión de Procesos.Gestión.Pegar"
+          },
+          {
+            "Name": "Eliminar",
+            "ShortcutKeys": "Ctrl+D",
+            "Program": "Gestión de Procesos.Gestión.Eliminar fichero procesos"
+          },
+          {
+            "Name": "Nueva carpeta",
+            "ShortcutKeys": "Ctrl+P",
+            "Program": "Gestión de Procesos.Gestión.Nueva carpeta"
+          },
+          {
+            "Name": "Renombrar",
+            "ShortcutKeys": "F2",
+            "Program": "Gestión de Procesos.Gestión.Renombrar fichero de proceso"
+          }
+        ]
+      },
+      "Events": {
+        "NuevoFichero_ToolStripMenuItem": "Gestión de Procesos.Gestión.Abrir ficha de proceso",
+        "cortarToolStripMenuItem": "Gestión de Procesos.Gestión.Cortar",
+        "pegarToolStripMenuItem": "Gestión de Procesos.Gestión.Pegar",
+        "eliminarToolStripMenuItem": "Gestión de Procesos.Gestión.Eliminar fichero procesos",
+        "nuevaCarpetaToolStripMenuItem": "Gestión de Procesos.Gestión.Nueva carpeta",
+        "renombrarToolStripMenuItem": "Gestión de Procesos.Gestión.Renombrar fichero de proceso"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Buscar programa o proceso",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Visor Datagridview",
+      "Guid": "14c779c9-2388-4c4d-a894-c013247a69c1",
+      "Name": "Ir a proceso o programa",
+      "Description": "",
+      "Configuration": {
+        "Call ir a programa": "Gestión de Programas.Ir a programa",
+        "Call ir a proceso": "Gestión de Programas.Procesos del programa.Ir al proceso activo"
+      },
+      "Inputs": {},
+      "Outputs": {
+        "Namespace programa destino": "GestorProgramas.VentanaProgramas.Namespace programa activo",
+        "Proceso destino": "GestorProgramas.VentanaProgramas.Proceso de programa activo"
+      },
+      "Edit_code": "0"
+    }
+  ]
+}

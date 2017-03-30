@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "SetVar",
+      "Name": "Set var",
+      "Description": "Set output variable value with input content or configuration",
+      "Configuration": [
+        "-value"
+      ],
+      "Inputs": [
+        "-value"
+      ],
+      "Outputs": [
+        "variable"
+      ],
+      "Version": "1.0",
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBTZXRWYXINCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChDb25maWdfbnVsbGFibGUoIi12YWx1ZSIpLlRvU3RyaW5nKCkgIT0gIiIpIE91dHB1dHMoInZhcmlhYmxlIiwgQ29uZmlnKCItdmFsdWUiKSk7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSBPdXRwdXRzKCJ2YXJpYWJsZSIsIElucHV0KCItdmFsdWUiKSk7DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0VORCBDT0RFIFBSQ0dVSUQ6IFNldFZhcg=="
+    }
+  ]
+}

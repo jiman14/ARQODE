@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Cargar ventana",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Gestor de controles",
+      "Guid": "fd7bbb95-2c3f-4e41-869f-5dca33016355",
+      "Name": "Cargar ventana controles eventos",
+      "Description": "",
+      "Configuration": {
+        "Programa filtrar busqueda": "Gestión de controles.Filtrar eventos activos"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

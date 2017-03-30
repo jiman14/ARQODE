@@ -1,0 +1,47 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Buscar referencias a un programa",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Precargar TablaB",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Precargar TablaB"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestor de programas",
+      "Guid": "54b8eead-551e-428b-98e6-7d3e831d475d",
+      "Name": "Buscar referencias al programa",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Namespace programa activo": "GestorProgramas.VentanaProgramas.Namespace programa activo"
+      },
+      "Outputs": {
+        "Tabla resultados": "ARQODE_UI.TablaB.Data Source",
+        "Num columna con path": "ARQODE_UI.TablaB.Num columna con path"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Abrir ventana",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Abrir ventana"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

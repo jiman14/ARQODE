@@ -1,0 +1,18 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Cargar datos de proceso",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "Cargar datos en formulario de proceso",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

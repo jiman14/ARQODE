@@ -1,0 +1,20 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Abrir mapeos UI",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Principal.ARQODE_UI",
+      "Guid": "c1cefd6f-b8ee-4ad4-8f85-a108120db648",
+      "Name": "Map UI",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

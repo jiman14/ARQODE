@@ -1,0 +1,154 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Data Source",
+    "Num columna con path"
+  ],
+  "Controls": [
+    {
+      "Guid": "TablaB",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.TablaB",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 725,
+          "Height": 447
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "panel1"
+      ]
+    },
+    {
+      "Guid": "panel1",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "Buscar",
+        "Tabla",
+        "TextBox1"
+      ]
+    },
+    {
+      "Guid": "Buscar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 23,
+          "Height": 28
+        },
+        "Location": {
+          "X": 680,
+          "Y": 9
+        },
+        "TabIndex": 3,
+        "Text": ">",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Utilidades.Visor Datagridview.Filtrar datos"
+      }
+    },
+    {
+      "Guid": "Tabla",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 709,
+          "Height": 366
+        },
+        "Location": {
+          "X": 0,
+          "Y": 43
+        },
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "FullRowSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": false,
+        "AllowUserToDeleteRows": false,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "AutoSizeColumnsMode": "Fill",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      },
+      "Events": {
+        "CellContentClick": "Utilidades.Visor Datagridview.Buscar programa o proceso"
+      }
+    },
+    {
+      "Guid": "TextBox1",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 662,
+          "Height": 23
+        },
+        "Location": {
+          "X": 12,
+          "Y": 12
+        },
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "TextChanged": "Utilidades.Visor Datagridview.Filtrar datos"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Cargar procesos",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "Cargar procesos",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "Cargar formulario proceso",
+      "Name": "Cargar formulario proceso",
+      "Description": "Cargar formulario proceso",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

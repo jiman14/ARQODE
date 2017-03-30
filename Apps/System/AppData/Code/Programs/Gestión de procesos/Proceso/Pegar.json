@@ -1,0 +1,29 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Pegar",
+  "Parallel_execution": false,
+  "Description": "Mueve el proceso",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "e0724caf-1ddf-4e3b-82ec-52f91b944f62",
+      "Name": "Pegar proceso",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "Cargar subprocesos",
+      "Name": "Cargar subprocesos",
+      "Description": "Cargar subprocesos",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

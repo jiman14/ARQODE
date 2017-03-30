@@ -1,0 +1,30 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Seleccionar evento",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Gestor de controles",
+      "Guid": "035a40d6-72be-48aa-9aef-5305b5dc7976",
+      "Name": "Seleccionar evento en lista",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Gestor de controles",
+      "Guid": "a6099e20-957f-477e-9ff5-92c4fc54e87c",
+      "Name": "Guardar eventos en control",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

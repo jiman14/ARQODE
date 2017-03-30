@@ -1,0 +1,218 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "DataSet",
+    "DataAdapter",
+    "DataView Dato activo"
+  ],
+  "Controls": [
+    {
+      "Guid": "VentanaEdicion",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.REGISTRO_ACCESOS.VentanaEdicion",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 802,
+          "Height": 517
+        },
+        "Text": "Edición de datos",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PContent"
+      ],
+      "Events": {}
+    },
+    {
+      "Guid": "PContent",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PTop",
+        "PContenido"
+      ]
+    },
+    {
+      "Guid": "PTop",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 786,
+          "Height": 46
+        },
+        "Dock": "Top",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "BNuevaFila",
+        "BGuardar"
+      ]
+    },
+    {
+      "Guid": "BNuevaFila",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 131,
+          "Height": 33
+        },
+        "Location": {
+          "X": 643,
+          "Y": 7
+        },
+        "Text": "Añadir fila",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Ventana de edición.Añadir nuevo registro"
+      }
+    },
+    {
+      "Guid": "BGuardar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 131,
+          "Height": 33
+        },
+        "Location": {
+          "X": 506,
+          "Y": 7
+        },
+        "Text": "Guardar",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Ventana de edición.Datos actualizados"
+      }
+    },
+    {
+      "Guid": "PContenido",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "Grid1"
+      ]
+    },
+    {
+      "Guid": "Grid1",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 755,
+          "Height": 403
+        },
+        "Location": {
+          "X": 3,
+          "Y": 52
+        },
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "RowHeaderSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": false,
+        "AllowUserToDeleteRows": true,
+        "AllowUserToOrderColumns": true,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "AutoSizeColumnsMode": "DisplayedCells",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {
+          "BackColor": "Aqua"
+        }
+      },
+      "Events": {}
+    }
+  ]
+}

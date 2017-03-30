@@ -1,0 +1,353 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Lista de eventos activa"
+  ],
+  "Controls": [
+    {
+      "Guid": "FormControlesEventos",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.FormControlesEventos",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 973,
+          "Height": 795
+        },
+        "Text": "Controls events",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PRight",
+        "PLeft"
+      ],
+      "Events": {
+        "FormClosed": "Gestión de controles.Cerrar ventana"
+      }
+    },
+    {
+      "Guid": "PRight",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 655,
+          "Height": 757
+        },
+        "Location": {
+          "X": 302,
+          "Y": 0
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PEventBottom",
+        "PTopEvent_Consult"
+      ]
+    },
+    {
+      "Guid": "PEventBottom",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 655,
+          "Height": 352
+        },
+        "Dock": "Bottom",
+        "TabIndex": 3,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PEventsGrid",
+        "panel1"
+      ]
+    },
+    {
+      "Guid": "PEventsGrid",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "DG_EventosControl"
+      ]
+    },
+    {
+      "Guid": "DG_EventosControl",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 649,
+          "Height": 291
+        },
+        "Location": {
+          "X": 3,
+          "Y": 3
+        },
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "CellSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": true,
+        "AllowUserToDeleteRows": true,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": false,
+        "AutoSizeColumnsMode": "Fill",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      }
+    },
+    {
+      "Guid": "panel1",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 655,
+          "Height": 58
+        },
+        "Dock": "Bottom",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "BGuardar"
+      ]
+    },
+    {
+      "Guid": "BGuardar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 91,
+          "Height": 30
+        },
+        "Location": {
+          "X": 552,
+          "Y": 14
+        },
+        "Text": "Save",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Gestión de controles.Guardar eventos en control"
+      }
+    },
+    {
+      "Guid": "PTopEvent_Consult",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "toolStrip1",
+        "ListaEventos"
+      ]
+    },
+    {
+      "Guid": "toolStrip1",
+      "Type": "System.Windows.Forms.ToolStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 655,
+          "Height": 25
+        },
+        "Dock": "Top",
+        "TabIndex": 1,
+        "Text": "toolStrip1",
+        "Padding": {
+          "Top": 0,
+          "Right": 1,
+          "Bottom": 0,
+          "Left": 0
+        }
+      },
+      "Events": {}
+    },
+    {
+      "Guid": "ListaEventos",
+      "Type": "System.Windows.Forms.ListView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 652,
+          "Height": 348
+        },
+        "Location": {
+          "X": 0,
+          "Y": 51
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "SelectedIndexChanged": "Gestión de controles.Seleccionar evento"
+      }
+    },
+    {
+      "Guid": "PLeft",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "TV_Controles"
+      ]
+    },
+    {
+      "Guid": "TV_Controles",
+      "Type": "System.Windows.Forms.TreeView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "AfterSelect": "Gestión de controles.Cargar eventos"
+      }
+    }
+  ]
+}

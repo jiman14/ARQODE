@@ -1,0 +1,47 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Ver código del proceso",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Principal.ARQODE_UI",
+      "Guid": "Abrir ventana principal",
+      "Name": "Abrir ventana principal",
+      "Description": "Abrir ventana principal",
+      "Configuration": {
+        "-ventana": "ARQODE_UI.VisorTexto"
+      },
+      "Inputs": {
+        "-ventana": ""
+      },
+      "Outputs": {}
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestión del proceso activo",
+      "Guid": "9af9d8c3-c621-460b-96a7-fa53cde549dd",
+      "Name": "Ver código del proceso activo",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "Código del proceso": "ARQODE_UI.VisorTexto.Texto"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Principal.ARQODE_UI",
+      "Guid": "722de0b2-e5e6-4f0e-b3b8-96b29a923049",
+      "Name": "Asignar texto a ventana de información",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Texto": "ARQODE_UI.VisorTexto.Texto"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

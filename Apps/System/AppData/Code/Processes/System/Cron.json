@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Cron add program",
+      "Name": "Cron add program",
+      "Description": "Cron add program",
+      "Configuration": [
+        "program",
+        "interval"
+      ],
+      "Inputs": [],
+      "Outputs": [],
+      "Version": "1.0",
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBDcm9uIGFkZCBwcm9ncmFtDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgU3RyaW5nIFByb2dyYW0gPSBDb25maWdfc3RyKCJwcm9ncmFtIik7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaW50IEludGVydmFsID0gQ29uZmlnX2ludCgiaW50ZXJ2YWwiKTsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzeXMuQ3Jvbi5hZGRQcm9ncmFtKFByb2dyYW0sIEludGVydmFsKTsNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vRU5EIENPREUgUFJDR1VJRDogQ3JvbiBhZGQgcHJvZ3JhbQ=="
+    },
+    {
+      "Guid": "Cron remove program",
+      "Name": "Cron remove program",
+      "Description": "Cron remove program",
+      "Configuration": [
+        "program"
+      ],
+      "Inputs": [],
+      "Outputs": [],
+      "Version": "1.0",
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBDcm9uIHJlbW92ZSBwcm9ncmFtDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgU3RyaW5nIFByb2dyYW0gPSBDb25maWdfc3RyKCJwcm9ncmFtIik7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3lzLkNyb24ucmVtb3ZlUHJvZ3JhbShQcm9ncmFtKTsNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vRU5EIENPREUgUFJDR1VJRDogQ3JvbiByZW1vdmUgcHJvZ3JhbQ=="
+    }
+  ]
+}

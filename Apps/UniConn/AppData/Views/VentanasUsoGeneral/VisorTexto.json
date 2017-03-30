@@ -1,0 +1,231 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [],
+  "Controls": [
+    {
+      "Guid": "VisorTexto",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.VENTANAS_USO_GENERAL.VisorTexto",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 939,
+          "Height": 568
+        },
+        "Text": "Visor",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PContent",
+        "PTop"
+      ]
+    },
+    {
+      "Guid": "PContent",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "RB_Texto"
+      ]
+    },
+    {
+      "Guid": "RB_Texto",
+      "Type": "System.Windows.Forms.RichTextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "PTop",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 923,
+          "Height": 49
+        },
+        "Dock": "Top",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "LRes",
+        "BBuscar",
+        "CH_Palabra",
+        "CH_CaseSensitive",
+        "TB_Busqueda"
+      ]
+    },
+    {
+      "Guid": "LRes",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 0,
+          "Height": 16
+        },
+        "Location": {
+          "X": 661,
+          "Y": 19
+        },
+        "TabIndex": 3,
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "BBuscar",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 105,
+          "Height": 30
+        },
+        "Location": {
+          "X": 540,
+          "Y": 12
+        },
+        "TabIndex": 2,
+        "Text": "Buscar",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "CH_Palabra",
+      "Type": "System.Windows.Forms.CheckBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 142,
+          "Height": 20
+        },
+        "Location": {
+          "X": 384,
+          "Y": 16
+        },
+        "TabIndex": 1,
+        "Text": "Palabras completas",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "CH_CaseSensitive",
+      "Type": "System.Windows.Forms.CheckBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 43,
+          "Height": 20
+        },
+        "Location": {
+          "X": 335,
+          "Y": 15
+        },
+        "TabIndex": 1,
+        "Text": "Aa",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "TB_Busqueda",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1087.0",
+      "Configuration": {
+        "Size": {
+          "Width": 316,
+          "Height": 22
+        },
+        "Location": {
+          "X": 13,
+          "Y": 13
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    }
+  ]
+}

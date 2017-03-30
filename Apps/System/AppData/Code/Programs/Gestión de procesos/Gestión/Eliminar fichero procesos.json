@@ -1,0 +1,30 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Eliminar proceso",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "0a2c9e12-f50d-4299-802c-0de96791a182",
+      "Name": "Eliminar fichero de procesos",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "1"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "Cargar procesos",
+      "Name": "Cargar procesos",
+      "Description": "Cargar procesos",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "1"
+    }
+  ]
+}

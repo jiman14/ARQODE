@@ -1,0 +1,47 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Buscar en procesos",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Precargar TablaB",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Precargar TablaB"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "ARQODE_UI.Buscadores.Buscadores",
+      "Guid": "61bb9810-2b5a-49d2-9a05-3705c8785181",
+      "Name": "Buscar en procesos",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "-Tabla resultados anterior": ""
+      },
+      "Outputs": {
+        "Tabla resultados": "ARQODE_UI.TablaB.Data Source",
+        "Num columna con path": "ARQODE_UI.TablaB.Num columna con path"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Utilidades.Visor Datagridview.Abrir ventana",
+      "Description": "",
+      "Configuration": {
+        "program": "Utilidades.Visor Datagridview.Abrir ventana"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

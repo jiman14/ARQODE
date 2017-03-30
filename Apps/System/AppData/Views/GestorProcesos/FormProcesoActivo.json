@@ -1,0 +1,937 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Active process",
+    "Namespace programa activo",
+    "Fila activa"
+  ],
+  "Controls": [
+    {
+      "Guid": "FormProcesoActivo",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.FormProcesoActivo",
+      "Type": "System.Windows.Forms.UserControl",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 646,
+          "Height": 636
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PFormProcesoActivo",
+        "PTop"
+      ]
+    },
+    {
+      "Guid": "PFormProcesoActivo",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScroll": true,
+        "AutoScrollMinSize": {
+          "Width": 1,
+          "Height": 1
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "TBDescription",
+        "LConfig",
+        "LOutputs",
+        "LInputs",
+        "BSave",
+        "label10",
+        "label9",
+        "label8",
+        "LName",
+        "label7",
+        "label4"
+      ]
+    },
+    {
+      "Guid": "TBDescription",
+      "Type": "System.Windows.Forms.TextBox",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 352,
+          "Height": 35
+        },
+        "Location": {
+          "X": 282,
+          "Y": 38
+        },
+        "TabIndex": 4,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "Multiline": true
+      }
+    },
+    {
+      "Guid": "LConfig",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 622,
+          "Height": 98
+        },
+        "Location": {
+          "X": 12,
+          "Y": 324
+        },
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "CellSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": false,
+        "AllowUserToDeleteRows": false,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "AutoSizeColumnsMode": "Fill",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      }
+    },
+    {
+      "Guid": "LOutputs",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 622,
+          "Height": 96
+        },
+        "Location": {
+          "X": 12,
+          "Y": 206
+        },
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "CellSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": false,
+        "AllowUserToDeleteRows": false,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "AutoSizeColumnsMode": "Fill",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      }
+    },
+    {
+      "Guid": "LInputs",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 622,
+          "Height": 105
+        },
+        "Location": {
+          "X": 12,
+          "Y": 79
+        },
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "SelectionMode": "CellSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": false,
+        "AllowUserToDeleteRows": false,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "AutoSizeColumnsMode": "Fill",
+        "MultiSelect": false,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      }
+    },
+    {
+      "Guid": "BSave",
+      "Type": "System.Windows.Forms.Button",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 89,
+          "Height": 30
+        },
+        "Location": {
+          "X": 545,
+          "Y": 5
+        },
+        "TabIndex": 3,
+        "Text": "Save",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "Click": "Gestión de Programas.Proceso activo.Guardar proceso activo"
+      }
+    },
+    {
+      "Guid": "label10",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 60,
+          "Height": 16
+        },
+        "Location": {
+          "X": 13,
+          "Y": 187
+        },
+        "TabIndex": 8,
+        "Text": "Outputs:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label9",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 98,
+          "Height": 16
+        },
+        "Location": {
+          "X": 13,
+          "Y": 305
+        },
+        "TabIndex": 8,
+        "Text": "Configuration:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label8",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 50,
+          "Height": 16
+        },
+        "Location": {
+          "X": 12,
+          "Y": 60
+        },
+        "TabIndex": 6,
+        "Text": "Inputs:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "LName",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 250,
+          "Height": 37
+        },
+        "Location": {
+          "X": 13,
+          "Y": 21
+        },
+        "TabIndex": 4,
+        "Text": "Process name",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label7",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 83,
+          "Height": 16
+        },
+        "Location": {
+          "X": 279,
+          "Y": 19
+        },
+        "TabIndex": 3,
+        "Text": "Description:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "label4",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 49,
+          "Height": 16
+        },
+        "Location": {
+          "X": 13,
+          "Y": 5
+        },
+        "TabIndex": 3,
+        "Text": "Name:",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "PTop",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 646,
+          "Height": 212
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PViews",
+        "PGlobals",
+        "PPrograms"
+      ]
+    },
+    {
+      "Guid": "PViews",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 2,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PContentViewsVars",
+        "PTopViews"
+      ]
+    },
+    {
+      "Guid": "PContentViewsVars",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "TV_ViewsVars"
+      ]
+    },
+    {
+      "Guid": "TV_ViewsVars",
+      "Type": "System.Windows.Forms.TreeView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 5,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "contextMenu_ViewVars",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 110,
+          "Height": 70
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        },
+        "Menu items": [
+          {
+            "Name": "Copy",
+            "ShortcutKeys": "Ctrl+C",
+            "Program": "Gestión de Programas.Variables.Copiar variable vista"
+          },
+          {
+            "Name": "New var",
+            "ShortcutKeys": "Ctrl+N",
+            "Program": "Gestión de Programas.Variables.Nueva variable vista"
+          },
+          {
+            "Name": "Delete var",
+            "ShortcutKeys": "Supr",
+            "Program": "Gestión de Programas.Variables.Eliminar variable vista"
+          }
+        ]
+      },
+      "Events": {
+        "copyToolStripMenuItem": "Gestión de Programas.Variables.Copiar variable vista",
+        "nuevaVariableToolStripMenuItem": "Gestión de Programas.Variables.Nueva variable vista",
+        "eliminarVariableToolStripMenuItem": "Gestión de Programas.Variables.Eliminar variable vista"
+      }
+    },
+    {
+      "Guid": "PTopViews",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 263,
+          "Height": 32
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "label1"
+      ]
+    },
+    {
+      "Guid": "label1",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 148,
+          "Height": 16
+        },
+        "Location": {
+          "X": 12,
+          "Y": 9
+        },
+        "TabIndex": 2,
+        "Text": "Views vars",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "PGlobals",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 200,
+          "Height": 212
+        },
+        "Dock": "Right",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PContentGlobalVars",
+        "PTopGlobals"
+      ]
+    },
+    {
+      "Guid": "PContentGlobalVars",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "LB_ProgramVars"
+      ]
+    },
+    {
+      "Guid": "LB_ProgramVars",
+      "Type": "System.Windows.Forms.ListBox",
+      "Description": "Gestión de Programas.Copiar variable de programa",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 6,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "contextMenu_ProgramVars",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 110,
+          "Height": 70
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        },
+        "Menu items": [
+          {
+            "Name": "Copy",
+            "ShortcutKeys": "Ctrl+C",
+            "Program": "Gestión de Programas.Variables.Copiar variable de programa"
+          },
+          {
+            "Name": "New var",
+            "ShortcutKeys": "Ctrl+N",
+            "Program": "Gestión de Programas.Variables.Nueva variable de programa"
+          },
+          {
+            "Name": "Delete var",
+            "ShortcutKeys": "Supr",
+            "Program": "Gestión de Programas.Variables.Eliminar variable de programa"
+          }
+        ]
+      },
+      "Events": {
+        "copyToolStripMenuItem1": "Gestión de Programas.Variables.Copiar variable de programa",
+        "nuevaVariableToolStripMenuItem1": "Gestión de Programas.Variables.Nueva variable de programa",
+        "eliminarVariableToolStripMenuItem1": "Gestión de Programas.Variables.Eliminar variable de programa"
+      }
+    },
+    {
+      "Guid": "PTopGlobals",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 200,
+          "Height": 32
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "label2"
+      ]
+    },
+    {
+      "Guid": "label2",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 157,
+          "Height": 16
+        },
+        "Location": {
+          "X": 16,
+          "Y": 9
+        },
+        "TabIndex": 3,
+        "Text": "Program vars",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    },
+    {
+      "Guid": "PPrograms",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 183,
+          "Height": 212
+        },
+        "Dock": "Right",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PContentProgVars",
+        "PTopProgVars"
+      ]
+    },
+    {
+      "Guid": "PContentProgVars",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "TV_GlobalsVars"
+      ]
+    },
+    {
+      "Guid": "TV_GlobalsVars",
+      "Type": "System.Windows.Forms.TreeView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 7,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      }
+    },
+    {
+      "Guid": "contextMenu_GlobalVars",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "Copiar variable global",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 110,
+          "Height": 70
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        },
+        "Menu items": [
+          {
+            "Name": "Copy",
+            "ShortcutKeys": "Ctrl+C",
+            "Program": "Gestión de Programas.Variables.Copiar variable global"
+          },
+          {
+            "Name": "New var",
+            "ShortcutKeys": "Ctrl+N",
+            "Program": "Gestión de Programas.Variables.Nueva variable global"
+          },
+          {
+            "Name": "Delete var",
+            "ShortcutKeys": "Supr",
+            "Program": "Gestión de Programas.Variables.Eliminar variable global"
+          }
+        ]
+      },
+      "Events": {
+        "copyToolStripMenuItem2": "Gestión de Programas.Variables.Copiar variable global"
+      }
+    },
+    {
+      "Guid": "PTopProgVars",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 183,
+          "Height": 32
+        },
+        "Dock": "Top",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "label3"
+      ]
+    },
+    {
+      "Guid": "label3",
+      "Type": "System.Windows.Forms.Label",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 125,
+          "Height": 16
+        },
+        "Location": {
+          "X": 17,
+          "Y": 9
+        },
+        "TabIndex": 3,
+        "Text": "Globals vars",
+        "Padding": {
+          "Top": 0,
+          "Right": 3,
+          "Bottom": 0,
+          "Left": 3
+        },
+        "TextAlign": "TopLeft"
+      }
+    }
+  ]
+}

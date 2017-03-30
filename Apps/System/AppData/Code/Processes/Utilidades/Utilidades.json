@@ -1,0 +1,28 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "Utilidades",
+  "processes": [
+    {
+      "Guid": "Aceptar diálogo entrada datos",
+      "Name": "Aceptar diálogo entrada datos",
+      "Description": "Aceptar diálogo entrada datos",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBBY2VwdGFyIGRpw6Fsb2dvIGVudHJhZGEgZGF0b3MNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAoKEZvcm0pdmlldy5tYWluQ29udHJvbCgpKS5EaWFsb2dSZXN1bHQgPSBEaWFsb2dSZXN1bHQuT0s7DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0VORCBDT0RFIFBSQ0dVSUQ6IEFjZXB0YXIgZGnDoWxvZ28gZW50cmFkYSBkYXRvcw=="
+    },
+    {
+      "Guid": "Cancelar diálogo entrada datos",
+      "Name": "Cancelar diálogo entrada datos",
+      "Description": "Cancelar diálogo entrada datos",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiBDYW5jZWxhciBkacOhbG9nbyBlbnRyYWRhIGRhdG9zDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgKChGb3JtKXZpZXcubWFpbkNvbnRyb2woKSkuRGlhbG9nUmVzdWx0ID0gRGlhbG9nUmVzdWx0LkNhbmNlbDsNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vRU5EIENPREUgUFJDR1VJRDogQ2FuY2VsYXIgZGnDoWxvZ28gZW50cmFkYSBkYXRvcw=="
+    }
+  ]
+}

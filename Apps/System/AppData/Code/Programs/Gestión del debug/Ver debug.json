@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Ver debug",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión del debug.Ver debug",
+      "Guid": "6c018c5b-070d-41ec-ade6-a3a0100b02c1",
+      "Name": "Ver debug",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Aplicación activa": "GestorProgramas.VentanaProgramas.Aplicación activa"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

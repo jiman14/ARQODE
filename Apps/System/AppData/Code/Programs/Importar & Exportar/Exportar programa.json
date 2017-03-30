@@ -1,0 +1,39 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Exportar programa",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [
+    "Fichero"
+  ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Diálogos.Save dialog",
+      "Guid": "13308de3-1318-435b-80bc-b614d76cad4b",
+      "Name": "Seleccionar fichero",
+      "Description": "",
+      "Configuration": {
+        "Nombre predeterminado": "Program_name",
+        "Filtros": "zip|*.zip"
+      },
+      "Inputs": {},
+      "Outputs": {
+        "Fichero seleccionado": "Fichero"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Importar y Exportar.Exportaciones",
+      "Guid": "17250dd1-6cd2-4b1b-a7cd-58ec52297bb8",
+      "Name": "Exportar programa",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Fichero de salida": "Fichero"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

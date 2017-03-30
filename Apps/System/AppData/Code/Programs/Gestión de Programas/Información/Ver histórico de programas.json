@@ -1,0 +1,63 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Ver histórico de programas",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Visor Datagridview",
+      "Guid": "c98e6736-4ba4-4187-a79e-ae5ed0c6f64d",
+      "Name": "Precargar TablaB",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Name": "Set var",
+      "Description": "Cargar histórico de programas",
+      "Configuration": {
+        "-value": ""
+      },
+      "Inputs": {
+        "-value": "GestorProgramas.VentanaProgramas.Histórico de programas"
+      },
+      "Outputs": {
+        "variable": "ARQODE_UI.TablaB.Data Source"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Name": "Set var",
+      "Description": "Cargar nº columna con path",
+      "Configuration": {
+        "-value": "0"
+      },
+      "Inputs": {
+        "-value": ""
+      },
+      "Outputs": {
+        "variable": "ARQODE_UI.TablaB.Num columna con path"
+      }
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Visor Datagridview",
+      "Guid": "2200a384-ef11-461c-9c81-b62170f98566",
+      "Name": "Abrir ventana",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Datasource": "ARQODE_UI.TablaB.Data Source",
+        "Num columna con path": "ARQODE_UI.TablaB.Num columna con path"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

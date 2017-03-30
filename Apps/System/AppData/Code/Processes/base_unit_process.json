@@ -1,0 +1,10 @@
+ {
+  "Guid": "unique id",
+  "Name": "name of process",
+  "Description": "description of process",
+  "Version": "1.0",
+  "Configuration": [ ],
+  "Default_Configuration": [ ],
+  "Inputs": [ ],
+  "Outputs": [ ]
+}

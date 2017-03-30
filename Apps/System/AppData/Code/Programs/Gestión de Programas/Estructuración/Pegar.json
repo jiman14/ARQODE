@@ -1,0 +1,29 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Pegar",
+  "Parallel_execution": false,
+  "Description": "Mueve un programa previamente copiado en el portapapeles",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Estructuración de programas",
+      "Guid": "1ff83da1-817c-4c05-bf34-579e43091bb0",
+      "Name": "Pegar programa",
+      "Description": "Mueve un programa de ubicación. Obtiene el enlace del programa a mover del portapapeles.",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestor de programas",
+      "Guid": "Cargar programas",
+      "Name": "Cargar programas",
+      "Description": "Cargar programas",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

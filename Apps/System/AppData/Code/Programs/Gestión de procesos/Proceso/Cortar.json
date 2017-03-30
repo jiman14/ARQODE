@@ -1,0 +1,20 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Cortar",
+  "Parallel_execution": false,
+  "Description": "Selecciona el proceso a mover",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de procesos.Gestor de procesos",
+      "Guid": "e7508f91-1565-4f0f-b02a-4d2dadabac5f",
+      "Name": "Cortar proceso",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

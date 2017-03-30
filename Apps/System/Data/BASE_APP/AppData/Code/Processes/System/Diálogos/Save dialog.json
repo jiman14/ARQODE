@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "Save dialog",
+  "processes": [
+    {
+      "Guid": "13308de3-1318-435b-80bc-b614d76cad4b",
+      "Name": "Seleccionar fichero",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [
+        "Nombre predeterminado",
+        "Filtros"
+      ],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [
+        "Fichero seleccionado"
+      ],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiAxMzMwOGRlMy0xMzE4LTQzNWItODBiYy1iNjE0ZDc2Y2FkNGINCg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgI3JlZ2lvbiBWYXJpYWJsZXMNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNhdmVGaWxlRGlhbG9nIHNmZCA9IG5ldyBTYXZlRmlsZURpYWxvZygpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNmZC5GaWxlTmFtZSA9IENvbmZpZ19zdHIoIk5vbWJyZSBwcmVkZXRlcm1pbmFkbyIpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNmZC5GaWx0ZXIgPSBDb25maWdfc3RyKCJGaWx0cm9zIik7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHNmZC5TaG93RGlhbG9nKCkgPT0gRGlhbG9nUmVzdWx0Lk9LKQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgT3V0cHV0cygiRmljaGVybyBzZWxlY2Npb25hZG8iLCBzZmQuRmlsZU5hbWUpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBPdXRwdXRzKCJGaWNoZXJvIHNlbGVjY2lvbmFkbyIsICIiKTsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgI2VuZHJlZ2lvbg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgLy9FTkQgQ09ERSBQUkNHVUlEOiAxMzMwOGRlMy0xMzE4LTQzNWItODBiYy1iNjE0ZDc2Y2FkNGI="
+    }
+  ]
+}

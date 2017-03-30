@@ -1,0 +1,339 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [
+    "Procesos programa activo",
+    "Namespace programa activo",
+    "Fila activa lista procesos",
+    "App activa",
+    "Proceso de programa activo",
+    "Histórico de programas",
+    "Aplicación activa"
+  ],
+  "Controls": [
+    {
+      "Guid": "VentanaProgramas",
+      "Class_Path": "ARQODE_VISUAL_EDITOR.ARQODE_UI.VentanaProgramas",
+      "Type": "System.Windows.Forms.Form",
+      "Description": "",
+      "Version": "1.0.0.0",
+      "Configuration": {
+        "Size": {
+          "Width": 1103,
+          "Height": 686
+        },
+        "Text": "ARQODE program editor",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Controls": [
+        "PProcesses",
+        "PTop",
+        "MenuTop"
+      ],
+      "Events": {
+        "Load": "Gestión de Programas.Cargar programas"
+      }
+    },
+    {
+      "Guid": "PProcesses",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 4,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      }
+    },
+    {
+      "Guid": "PTop",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 1087,
+          "Height": 222
+        },
+        "Dock": "Top",
+        "TabIndex": 3,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "PListaProcesos",
+        "PanelArbolProgramas"
+      ]
+    },
+    {
+      "Guid": "PListaProcesos",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "TabIndex": 3,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "ListaProcesos"
+      ],
+      "Events": {
+        "DoubleClick": "Gestión de Programas.Procesos del programa.Ir al proceso activo"
+      }
+    },
+    {
+      "Guid": "ListaProcesos",
+      "Type": "System.Windows.Forms.DataGridView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "EditMode": "EditOnKeystrokeOrF2",
+        "MultiSelect": true,
+        "SelectionMode": "CellSelect",
+        "ScrollBars": "Both",
+        "AllowUserToAddRows": true,
+        "AllowUserToDeleteRows": true,
+        "AllowUserToOrderColumns": false,
+        "AllowUserToResizeColumns": true,
+        "AllowUserToResizeRows": true,
+        "ColumnHeadersHeightSizeMode": "AutoSize",
+        "RowHeadersWidthSizeMode": "EnableResizing",
+        "AlternatingRowsDefaultCellStyle": {}
+      },
+      "Events": {
+        "CellContentClick": "Gestión de Programas.Editar código",
+        "CellClick": "Gestión de Programas.Proceso activo.Cargar proceso activo"
+      }
+    },
+    {
+      "Guid": "contextMenu_LProcesos",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 105,
+          "Height": 158
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        }
+      },
+      "Events": {
+        "irAlProcesoToolStripMenuItem": "Gestión de Programas.Procesos del programa.Ir al proceso activo",
+        "eliminarToolStripMenuItem1": "Gestión de Programas.Procesos del programa.Eliminar proceso",
+        "subirToolStripMenuItem": "Gestión de Programas.Procesos del programa.Subir proceso",
+        "bajarToolStripMenuItem": "Gestión de Programas.Procesos del programa.Bajar proceso",
+        "buscarReferenciasToolStripMenuItem": "Gestión de Programas.Información.Buscar referencias a un proceso",
+        "callprogramaPreviamenteCortadoToolStripMenuItem": "Gestión de Programas.Gestión del call.Asignar call al programa activo",
+        "verCódigoToolStripMenuItem": "Gestión de Programas.Información.Ver código del proceso",
+        "editarCódigoToolStripMenuItem": "Gestión de Programas.Enviar código a edición"
+      }
+    },
+    {
+      "Guid": "PanelArbolProgramas",
+      "Type": "System.Windows.Forms.Panel",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 400,
+          "Height": 222
+        },
+        "Dock": "Left",
+        "TabIndex": 1,
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        },
+        "AutoScrollMinSize": {
+          "Width": 0,
+          "Height": 0
+        },
+        "VerticalScroll": {
+          "Enabled": true
+        },
+        "HorizontalScroll": {
+          "Enabled": true
+        }
+      },
+      "Controls": [
+        "ArbolProgramas"
+      ],
+      "Events": {}
+    },
+    {
+      "Guid": "ArbolProgramas",
+      "Type": "System.Windows.Forms.TreeView",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Dock": "Fill",
+        "Padding": {
+          "Top": 3,
+          "Right": 3,
+          "Bottom": 3,
+          "Left": 3
+        }
+      },
+      "Events": {
+        "AfterSelect": "Gestión de Programas.Cargar subprogramas",
+        "AfterExpand": "Gestión de Programas.Cargar subprogramas"
+      }
+    },
+    {
+      "Guid": "contextMenu_Programas",
+      "Type": "System.Windows.Forms.ContextMenuStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 111,
+          "Height": 180
+        },
+        "Padding": {
+          "Top": 2,
+          "Right": 1,
+          "Bottom": 2,
+          "Left": 33
+        }
+      },
+      "Events": {
+        "nuevoToolStripMenuItem": "Gestión de Programas.Estructuración.Abrir ficha de programa",
+        "cortarToolStripMenuItem": "Gestión de Programas.Estructuración.Cortar",
+        "pegarToolStripMenuItem": "Gestión de Programas.Estructuración.Pegar",
+        "eliminarToolStripMenuItem": "Gestión de Programas.Estructuración.Eliminar programa",
+        "nuevaCarpetaToolStripMenuItem": "Gestión de Programas.Estructuración.Nueva carpeta",
+        "renombrarToolStripMenuItem": "Gestión de Programas.Estructuración.Renombrar",
+        "asignarAToolStripMenuItem": "Gestión de controles.Cargar ventana",
+        "buscarReferenciasToolStripMenuItem1": "Gestión de Programas.Información.Buscar referencias a un programa",
+        "exportarProgramaToolStripMenuItem": "Importar & Exportar.Exportar programa",
+        "importarProgramaToolStripMenuItem": "Importar & Exportar.Importar programa"
+      }
+    },
+    {
+      "Guid": "MenuTop",
+      "Type": "System.Windows.Forms.ToolStrip",
+      "Description": "",
+      "Version": "4.6.1590.0",
+      "Configuration": {
+        "Size": {
+          "Width": 1087,
+          "Height": 25
+        },
+        "Dock": "Top",
+        "Text": "toolStrip1",
+        "Padding": {
+          "Top": 0,
+          "Right": 1,
+          "Bottom": 0,
+          "Left": 0
+        }
+      }
+    }
+  ],
+  "Objects": [    
+    {
+      "Guid": "OpenXML Document",
+      "Assembly": "ARQODE_Controls.ACControls.dll",
+      "Object Name": "ARQODE_Controls.OpenXMLDocument",
+      "Description": "OpenXML Document",
+      "Version": "1.0",
+      "Configuration": {},
+      "Methods": {
+        "Create word document": {
+          "Name": "CreateWordDocument",
+          "Parameters": {
+            "file_path": "",
+            "rtfEncodedString": ""
+          }
+        }
+      }
+    },
+    {
+      "Guid": "Cargar arbol recursivo",
+      "Assembly": "HelpControls.dll",
+      "Object Name": "HelpControls.CRellenarArbol",
+      "Description": "Devuelve un arbol de nodos de la ruta de carpeta enviada",
+      "Version": "1.0",
+      "Configuration": {},
+      "Methods": {
+        "Crear arbol desde carpeta": {
+          "Name": "DesdeSistemaArchivos_recursivo",
+          "Parameters": {
+            "path": "",
+            "Omit_files_and_dir_list": ""
+          }
+        },
+        "Crear lista de nodos hoja del árbol": {
+          "Name": "CrearListaNodosHoja",
+          "Parameters": {
+            "arbol_origen": ""
+          }
+        }
+      }
+    }
+  ]
+}

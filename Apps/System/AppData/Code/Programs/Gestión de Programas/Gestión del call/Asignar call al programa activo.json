@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Asignar call al programa activo",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestión de procesos de programa",
+      "Guid": "781150d3-d1ed-4245-8fe9-9fe26a594e2f",
+      "Name": "Asignar call al programa activo",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Gestión de programas.Gestor de programas",
+      "Guid": "Cargar subprogramas",
+      "Name": "Cargar subprogramas",
+      "Description": "Cargar subprogramas",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "-Histórico de programas": ""
+      }
+    }
+  ]
+}

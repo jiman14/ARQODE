@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1841C0D3-D0EA-4728-B3BB-191990F22BE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARQODE</RootNamespace>
+    <AssemblyName>ARQODE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.10.1.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>packages\DotNetZip.1.10.1\lib\net20\DotNetZip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HelpControls, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Apps\Excel_utils\AppData\Dll\HelpControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NJsonSchema, Version=8.14.6289.34345, Culture=neutral, PublicKeyToken=c2f9c3bdfae56102, processorArchitecture=MSIL">
+      <HintPath>packages\NJsonSchema.8.14.6289.34345\lib\net45\NJsonSchema.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Coder\Coder.cs" />
+    <Compile Include="Logic\Base\MainProperties.cs" />
+    <Compile Include="Logic\Base\TTracer.cs" />
+    <Compile Include="Logic\CLogicEditor.cs" />
+    <Compile Include="Logic\CMapObject.cs" />
+    <Compile Include="Logic\Code\CProcesses.cs" />
+    <Compile Include="Logic\CVariables.cs" />
+    <Compile Include="Logic\CDataIntegrity.cs" />
+    <Compile Include="Logic\CStructModifications.cs" />
+    <Compile Include="Logic\Base\TDebug.cs" />
+    <Compile Include="Logic\Base\TError.cs" />
+    <Compile Include="Logic\Base\TProcess.cs" />
+    <Compile Include="Logic\CLogic.cs" />
+    <Compile Include="Logic\CMap.cs" />
+    <Compile Include="Logic\CProgram.cs" />
+    <Compile Include="Logic\CRunner.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Buscadores\Buscadores.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de controles\Gestor de controles.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de controles\Input box.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de controles\Visor Datagridview.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de controles\Visor de texto.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de errores\Errores de programa.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de errores\Errores gráficos.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de procesos\Gestor de procesos.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Aplicación.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Estructuración de programas.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Gestión de procesos de programa.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Gestión del proceso activo.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Gestor de programas.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Menú contextual de programas.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión de programas\Menú principal del programa.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Gestión del debug\Ver debug.cs" />
+    <Compile Include="System\App\Code\ARQODE_UI\Principal\ARQODE_UI.cs" />
+    <Compile Include="System\App\Code\Controls\UIControls.cs" />
+    <Compile Include="System\App\Code\System\Call.cs" />
+    <Compile Include="System\App\Code\System\Cron.cs" />
+    <Compile Include="System\App\Code\System\Diálogos\File dialog.cs" />
+    <Compile Include="System\App\Code\System\Diálogos\Save dialog.cs" />
+    <Compile Include="System\App\Code\System\Keyboard.cs" />
+    <Compile Include="System\App\Code\System\SetVar.cs" />
+    <Compile Include="System\App\Code\Utilidades\Utilidades.cs" />
+    <Compile Include="System\App\UI\GestorControles\FormControlesEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\GestorControles\FormControlesEventos.Designer.cs">
+      <DependentUpon>FormControlesEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\GestorControles\FormControlesEventos_map.cs" />
+    <Compile Include="System\App\UI\GestorProcesos\FormProceso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\FormProceso.Designer.cs">
+      <DependentUpon>FormProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\FormProcesoActivo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\FormProcesoActivo.Designer.cs">
+      <DependentUpon>FormProcesoActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\FormProcesoActivo_map.cs" />
+    <Compile Include="System\App\UI\GestorProcesos\FormProceso_map.cs" />
+    <Compile Include="System\App\UI\GestorProcesos\VentanaProcesos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\VentanaProcesos.Designer.cs">
+      <DependentUpon>VentanaProcesos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProcesos\VentanaProcesos_map.cs" />
+    <Compile Include="System\App\UI\GestorProgramas\VentanaProgramas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProgramas\VentanaProgramas.Designer.cs">
+      <DependentUpon>VentanaProgramas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\GestorProgramas\VentanaProgramas_map.cs" />
+    <Compile Include="System\App\UI\GestorProgramas\VentanasAyuda\FichaPrograma_map.cs" />
+    <Compile Include="System\App\UI\VentanasUsoGeneral\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\InputDialog_map.cs" />
+    <Compile Include="System\App\UI\VentanasUsoGeneral\TablaB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\TablaB.Designer.cs">
+      <DependentUpon>TablaB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\TablaB_map.cs" />
+    <Compile Include="System\App\UI\VentanasUsoGeneral\VisorTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\VisorTexto.Designer.cs">
+      <DependentUpon>VisorTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\App\UI\VentanasUsoGeneral\VisorTexto_map.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Base\CCron.cs" />
+    <Compile Include="System\Base\CDebug.cs" />
+    <Compile Include="System\Base\CErrors.cs" />
+    <Compile Include="System\Base\CEventDesc.cs" />
+    <Compile Include="System\Base\CGlobals.cs" />
+    <Compile Include="System\Base\CSystem.cs" />
+    <Compile Include="System\Base\MainProperties.cs" />
+    <Compile Include="System\CACore.cs" />
+    <Compile Include="UI\Main\MainView_map.cs" />
+    <Compile Include="UI\VentanasUsoGeneral\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\InputDialog_map.cs" />
+    <Compile Include="UI\VentanasUsoGeneral\VentanaEdicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\VentanaEdicion.Designer.cs">
+      <DependentUpon>VentanaEdicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\VentanaEdicion_map.cs" />
+    <Compile Include="UI\VentanasUsoGeneral\VisorTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\VisorTexto.Designer.cs">
+      <DependentUpon>VisorTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VentanasUsoGeneral\VisorTexto_map.cs" />
+    <Compile Include="View\MapUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MapUI.Designer.cs">
+      <DependentUpon>MapUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\JSonBase.cs" />
+    <Compile Include="Utils\JSonFile.cs" />
+    <Compile Include="View\Base\MainProperties.cs" />
+    <Compile Include="View\Base\TBaseObjects.cs" />
+    <Compile Include="View\Base\TBaseControls.cs" />
+    <Compile Include="View\CView.cs" />
+    <Compile Include="View\CViewsManager.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="System\App\UI\GestorProgramas\VentanaProgramas.resx">
+      <DependentUpon>VentanaProgramas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MapUI.resx">
+      <DependentUpon>MapUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\App\Code\ARQODE_UI\Importar y Exportar\Exportaciones.cs" xmlns="" />
+    <Compile Include="System\App\Code\ARQODE_UI\Importar y Exportar\Importaciones.cs" xmlns="" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

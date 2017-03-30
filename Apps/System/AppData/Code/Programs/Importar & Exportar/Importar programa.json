@@ -1,0 +1,60 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Importar programa",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [
+    "Fichero"
+  ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Diálogos.File dialog",
+      "Guid": "d7c66f82-4473-4e8c-b556-0f6c6509782e",
+      "Name": "Seleccionar fichero",
+      "Description": "",
+      "Configuration": {
+        "Filtros": "zip|*.zip"
+      },
+      "Inputs": {},
+      "Outputs": {
+        "Fichero seleccionado": "Fichero"
+      },
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "ARQODE_UI.Importar y Exportar.Importaciones",
+      "Guid": "439a02f9-bfb8-467a-8443-6607ca19b912",
+      "Name": "Importar programa",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Fichero importaciones": "Fichero"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Gestión de Programas.Cargar programas",
+      "Description": "",
+      "Configuration": {
+        "program": "Gestión de Programas.Cargar programas"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Name": "Call Gestión de procesos.Cargar procesos",
+      "Description": "",
+      "Configuration": {
+        "program": "Gestión de procesos.Cargar procesos"
+      },
+      "Inputs": {},
+      "Outputs": {}
+    }
+  ]
+}

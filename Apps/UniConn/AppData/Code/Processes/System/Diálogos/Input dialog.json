@@ -1,0 +1,34 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "Input dialog",
+  "processes": [
+    {
+      "Guid": "9fc3674f-1e34-4c34-9989-9de8fe80b7ad",
+      "Name": "Open input dialog",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [
+        "Dialog name",
+        "Message"
+      ],
+      "Outputs": [
+        "Dialog result",
+        "Input text"
+      ],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiA5ZmMzNjc0Zi0xZTM0LTRjMzQtOTk4OS05ZGU4ZmU4MGI3YWQKLy9PcGVuIGlucHV0IGRpYWxvZwoKCQkJCS8vIElucHV0cyB2YXJzDQoJCQkJb2JqZWN0IElfRGlhbG9nX25hbWUgPSBJbnB1dCgiRGlhbG9nIG5hbWUiLCBmYWxzZSk7IA0KCQkJCW9iamVjdCBJX01lc3NhZ2UgPSBJbnB1dCgiTWVzc2FnZSIsIGZhbHNlKTsNCg0KICAgICAgICAgICAgICAgIFZpZXdzLlZlbnRhbmFzVXNvR2VuZXJhbC5DSW5wdXREaWFsb2cgQ0lucHV0RGlhbG9nID0gbmV3IFZpZXdzLlZlbnRhbmFzVXNvR2VuZXJhbC5DSW5wdXREaWFsb2codm0pOw0KICAgICAgICAgICAgICAgIENJbnB1dERpYWxvZy5JbnB1dERpYWxvZy5UZXh0ID0gKElfRGlhbG9nX25hbWUgIT0gbnVsbCk/IElfRGlhbG9nX25hbWUuVG9TdHJpbmcoKTogIiI7DQogICAgICAgICAgICAgICAgQ0lucHV0RGlhbG9nLkxhYmVsMS5UZXh0ID0gKElfTWVzc2FnZSAhPSBudWxsKSA/IElfTWVzc2FnZS5Ub1N0cmluZygpIDogIiI7DQoNCiAgICAgICAgICAgICAgICBEaWFsb2dSZXN1bHQgZHIgPSBDSW5wdXREaWFsb2cuSW5wdXREaWFsb2cuU2hvd0RpYWxvZygpOw0KDQogICAgICAgICAgICAgICAgLy8gT3V0cHV0cyB2YXJzDQogICAgICAgICAgICAgICAgT3V0cHV0cygiRGlhbG9nIHJlc3VsdCIsIGRyKTsgDQoJCQkJT3V0cHV0cygiSW5wdXQgdGV4dCIsIENJbnB1dERpYWxvZy50ZXh0Qm94MS5UZXh0KTsgDQoKLy9FTkQgQ09ERSBQUkNHVUlEOiA5ZmMzNjc0Zi0xZTM0LTRjMzQtOTk4OS05ZGU4ZmU4MGI3YWQ="
+    },
+    {
+      "Guid": "88b301eb-0de9-488a-9e0e-390fc6ea6c69",
+      "Name": "Init input dialog",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Code": "Ly9JTkkgQ09ERSBQUkNHVUlEOiA4OGIzMDFlYi0wZGU5LTQ4OGEtOWUwZS0zOTBmYzZlYTZjNjkNCiAgICAgICAgICAgICAgICAvL0luaXQgaW5wdXQgZGlhbG9nDQoNCiAgICAgICAgICAgICAgICBuZXcgVmlld3MuVmVudGFuYXNVc29HZW5lcmFsLkNJbnB1dERpYWxvZyh2bSk7DQoNCg0KLy9FTkQgQ09ERSBQUkNHVUlEOiA4OGIzMDFlYi0wZGU5LTQ4OGEtOWUwZS0zOTBmYzZlYTZjNjk="
+    }
+  ]
+}

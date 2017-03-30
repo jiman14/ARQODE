@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Chequeo periódico de errores",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de errores.Errores de programa",
+      "Guid": "8a4259e0-60da-4908-9394-0655c5bf876e",
+      "Name": "Chequeo de errores",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Aplicación activa": "GestorProgramas.VentanaProgramas.Aplicación activa"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

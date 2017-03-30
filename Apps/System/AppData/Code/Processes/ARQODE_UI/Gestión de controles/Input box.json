@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "Input box",
+  "processes": [
+    {
+      "Guid": "958cabc4-402d-4b76-b12e-913a95bfc355",
+      "Name": "Aceptar y cancelar al pulsar enter y esc",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [],
+      "Default_Configuration": [],
+      "Inputs": [],
+      "Outputs": [],
+      "Code": ""
+    }
+  ]
+}

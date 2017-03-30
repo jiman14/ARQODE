@@ -1,0 +1,22 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Filtrar eventos activos",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "ARQODE_UI.Gestión de controles.Gestor de controles",
+      "Guid": "3ef11a02-d7fa-400c-bb81-4339207679ae",
+      "Name": "Filtrar eventos activos",
+      "Description": "",
+      "Configuration": {},
+      "Inputs": {
+        "Lista de eventos": "GestorControles.FormControlesEventos.Lista de eventos activa"
+      },
+      "Outputs": {},
+      "Edit_code": "0"
+    }
+  ]
+}

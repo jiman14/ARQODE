@@ -1,0 +1,10 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "type program name",
+  "Parallel_execution": false,
+  "Description": "type description",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+  ]
+}
