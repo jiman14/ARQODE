@@ -12,10 +12,10 @@ ARQODE consta de dos herramientas:
 2. Un editor de programas: **ARQODE Program editor**.
 
 # ¿Por qué programar con ARQODE?
-AROQDE permite programar sin tanta necesidad de abstracción, pues cuando se programa en tiempo de ejecución se tiene acceso a los objetos
-reales y a sus variables, además Visual Studio aporta:
-- revisión de errores sintácticos en tiempo real
-- posibiildad de volver atras la línea de ejecución activa (muy util después de saltar un try ... catch)
+AROQDE permite programar "desde dentro" de la aplicación, rodeado de los objetos que necesitas cargados, con la flexibilidad de mover la línea de ejecución adelante y atrás en el tiempo. Visual Studio aporta además:
+- Revisión de errores sintácticos en tiempo real.
+- Posibiildad de volver a la línea de ejecución fallida después de un error.
+- Acceder a la ventana de "Inmediato" para ejecutar comandos.
 
 # ¿Cómo programar con ARQODE?
 Una vez creada una aplicación en ARQODE APP Manager, esta se carga directamente en el proyecto ARQODE y se ejecuta Visual Studio con el
