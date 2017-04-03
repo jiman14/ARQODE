@@ -7,7 +7,7 @@ ARQODE "amplia" la funcionalidad de Visual Studio "Edit and Continue" permitiend
 
 ARQODE consta de dos herramientas:
 1. Un gestor de aplicaciones: **ARQODE APP Manager**
-2. Un editor de programas: ""ARQODE Program editor**.
+2. Un editor de programas: **ARQODE Program editor**.
 
 # ¿Por qué programar con ARQODE?
 AROQDE permite programar sin tanta necesidad de abstracción, pues cuando se programa en tiempo de ejecución se tiene acceso a los objetos
@@ -22,7 +22,7 @@ programa recién creado listo para empezar a programar.
 La aplicación básica consta de un formulario vacío, que se recomienda editar previamente  en Visual Studio para añadir todos los 
 controles gráficos requeridos.
 
-##Crear la estructura de la aplicación a alto nivel:
+## Crear la estructura de la aplicación a alto nivel:
 
 1. Crear la funcionalidad a alto nivel en el árbol de Programas
   * Cada programa contiene procesos o llamadas a otros programas.
@@ -30,12 +30,12 @@ controles gráficos requeridos.
 3. Asignar un programa a un evento de un control.
   * El primer programa debe asignarse al evento Load del formulario principal.
 
-##El proceso en ARQODE
+## El proceso en ARQODE
 
 Es la unidad mínima de programación, se trata literalmente de un trozo de código que se ejecuta dentro de un contexto y que permite
 definir entradas y salidas, así como tener una configuración propia. 
 
-##El programa en ARQODE
+## El programa en ARQODE
 
 Se trata de un contenedor de procesos o llamadas a otros programas que se ejecuta a través de un evento. Con el objetivo de una mejor
 reutilización del código, es recomendable hacer pequeños programas, pero que a su vez resuelvan completamente una funcionalidad. 
@@ -48,7 +48,7 @@ Para controlar el flujo del programa hay dos grandes recursos:
 2. Poder encolar la llamada a un programa, para que se ejecute siempre al final.
 Además el paso de variables del programa activo al programa llamado se hace automáticamente.
 
-##Formularios o Vistas en ARQODE
+## Formularios o Vistas en ARQODE
 
 Cada formulario o vista en ARQODE puede contener variables que estarán activas mientras el formulario lo esté. Por lo que es recomendable
 introducir en el formulario principal todas las variables globales en tiempo de ejecución del programa.
@@ -56,7 +56,7 @@ introducir en el formulario principal todas las variables globales en tiempo de 
 Cada formulario genera un fichero mapeado dentro de la carpeta UI de ARQODE que facilita el acceso a los controles por nombre, a demás de 
 a sus variables de vista.
 
-##Escribir el código:
+## Escribir el código:
 
 Para lanzar la nueva aplicación y empezar a escribir código pulsar en "Run app" en el ARQODE Program editor. Esto hará saltar un punto 
 de ruptura en el fichero "Coder.cs", que será la ventana de acceso a todo el código de la aplicación.
