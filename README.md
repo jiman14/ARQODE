@@ -120,6 +120,11 @@ Además la barra superior incluye:
 - Un comprobador de entradas y salidas no asignadas
 - Información de traza y errores
 
+# BUGS conocidos
+
+Principalmente el mayor talón de aquiles de ARQODE es el propio motor del sistema de "Edit and continue" de Visual Studio, que requiere muchos recursos y que en determinadas situaciones se corrompe y produce un error general que obliga a reiniciar Visual Studio. Aunque una vez cargado un proyecto el reinicio es rápido, espero que Microsoft estabilice esta funcionalidad más.
+
+El proyecto de ARQODE viene con la configuración óptima para que este fallo se produzca lo menos posible, pero es recomendable usar un equipo con más de 4GB de RAM y un procesador solvente (de gama media-alta).
 
 # Usar ARQODE
 
