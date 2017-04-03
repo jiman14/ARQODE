@@ -30,29 +30,30 @@ Una vez creada una aplicación en ARQODE APP Manager, ésta se carga en el proye
 
 ## La unidad de programación: el proceso
 
-Es la unidad mínima de programación, se trata literalmente de un trozo de código que se ejecuta dentro de un contexto y que permite
-definir entradas y salidas, así como tener una configuración propia. 
+Es la unidad mínima de programación, el código del proceso se ejecuta dentro de un contexto que permite
+definir entradas y salidas, y también permite tener una configuración propia. Con lo cual **un proceso puede configurarse** desde la interfaz del "Editor de programas".
 
-## Funcionalidad en programas
+## Funcionalidad y programas
 
-Se trata de un contenedor de procesos o llamadas a otros programas que se ejecuta a través de un evento. Con el objetivo de una mejor
-reutilización del código, es recomendable hacer pequeños programas, pero que a su vez resuelvan completamente una funcionalidad. 
+Los programas son básicamente contenedores de procesos y llamadas a otros programas, que se ejecutan a través de eventos. 
 
-Las llamadas recursivas a programas son un pilar de este modelo de programación y para hacer un mejor seguimiento en la consola de salida
-de Visual Studio se podrá ver la traza de procesos / programas ejecutados en todo momento.
+Nota: con el objetivo de una mejor reutilización del código, es recomendable hacer pequeños programas, pero que a su vez resuelvan completamente una funcionalidad. 
 
-Para controlar el flujo del programa hay dos grandes recursos:
-1. Poder detener la ejecución del programa dentro de cualquier proceso.
-2. Poder encolar la llamada a un programa, para que se ejecute siempre al final.
-Además el paso de variables del programa activo al programa llamado se hace automáticamente.
+Las llamadas recursivas a programas son uno de los pilares de este modelo de programación y, para hacer un mejor seguimiento, en la consola de salida de Visual Studio se podrá ver la traza de procesos / programas ejecutados en todo momento.
+
+Para controlar el flujo del programa hay dos recursos:
+1. Se puede detener la ejecución del programa desde el código de cualquier proceso.
+2. Se puede encolar la ejecución a un programa, para que se ejecute siempre al final añadiendo el prefijo "&" a la ruta del programa destino dentro de la configuración de la llamada al programa.
+
+Nota: las variables del programa activo se transfieren automáticamente al programa llamado, pero para que pueda hacer uso de ellas
+el proceso "hijo" debe definir variables de programa con el mismo nombre.
 
 ## Formularios o Vistas
 
-Cada formulario o vista en ARQODE puede contener variables que estarán activas mientras el formulario lo esté. Por lo que es recomendable
-introducir en el formulario principal todas las variables globales en tiempo de ejecución del programa.
+Los formularios, también llamados en ARQODE **vistas**, pueden contener variables que estarán activas mientras el formulario lo esté. Nota: es recomendable introducir en el formulario principal todas las variables globales (en tiempo de ejecución) del programa.
 
-Cada formulario genera un fichero mapeado dentro de la carpeta UI de ARQODE que facilita el acceso a los controles por nombre, a demás de 
-a sus variables de vista.
+Cada formulario genera un fichero mapeado dentro de la carpeta UI de ARQODE que se puede usar para acceder a los controles
+por nombre, a demás de a sus variables de vista. La 
 
 ## Escribir código:
 
