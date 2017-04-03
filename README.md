@@ -53,11 +53,11 @@ el proceso "hijo" debe definir variables de programa con el mismo nombre.
 Los formularios, también llamados en ARQODE **vistas**, pueden contener variables que estarán activas mientras el formulario lo esté. Nota: es recomendable introducir en el formulario principal todas las variables globales (en tiempo de ejecución) del programa.
 
 Cada formulario genera un fichero mapeado dentro de la carpeta UI de ARQODE que se puede usar para acceder a los controles
-por nombre, a demás de a sus variables de vista. La 
+por nombre, a demás de a sus variables de vista. El fichero mapeado se guarda en la carpeta UI junto al correspondiente formulario con el sufijo "_map". 
 
-## Escribir código:
+## Codificar en ARQODE:
 
-Para lanzar la nueva aplicación y empezar a escribir código pulsar en "Run app" en el ARQODE Program editor. Esto hará saltar un punto 
+Para lanzar la nueva aplicación y empezar a escribir código pulsar en "Run app" en el "ARQODE Program editor". Esto hará saltar un punto 
 de ruptura en el fichero "Coder.cs", que será la ventana de acceso a todo el código de la aplicación.
 
 En ella se pueden ver las variables a las que tenemos acceso que principalmente permiten:
@@ -65,20 +65,51 @@ En ella se pueden ver las variables a las que tenemos acceso que principalmente 
 2. Acceder a las variables del programa, del proceso y de los formularios.
 3. Acceder a los argumentos del evento que ha lanzado el programa.
 
-## Modificar código Puntos de ruptura
+Nota: las variables se pueden ver en el propio fichero "Coder.cs" 
 
-**El punto de ruptura del fichero "Coder.cs" no se debe eliminar**. Se activa en estos casos:
-1. La primera vez que se crea un nuevo proceso. 
+## Modificar código. El punto de ruptura
+
+Existe **un punto de ruptura del fichero "Coder.cs" que no se debe eliminar**. Se activa en estos casos:
+1. La primera vez que se crea un proceso. 
 2. Cuando la ejecución del programa pasa por un proceso cuyo check "Editor" (de la lista de procesos del programa) está marcado.
 3. Cuando se pulsa sobre el menú contextual "Editar código" en la lista de procesos del programa.
 4. Si hay un error en el código, el proceso afectado se carga automáticamente en el fichero "Coder.cs"
 
 Nota: Si no estás familiarizado con la opción "Edit and continue" de Visual Studio, te recomendamos primero leer sobre ella [aquí](https://msdn.microsoft.com/en-us/library/x17d7wxw.aspx).
-También es imprescindible saber usar los [puntos de ruptura] (https://channel9.msdn.com/Blogs/Visual-Studio-Shorts/Using-Breakpoints-for-Debugging-in-Visual-Studio-2015).
+También es imprescindible usar los [puntos de ruptura] (https://channel9.msdn.com/Blogs/Visual-Studio-Shorts/Using-Breakpoints-for-Debugging-in-Visual-Studio-2015).
 
-# Otras funcionalidades
+# ¿Cómo funiona ARQODE?
 
-Hay mucha funcionalidad oculta bajo menús contextuales que es recomendable explorar pues ayudan a:
+ARQODE es un sistema de programación modular de alto nivel que faciilta la integración y la codificación a través de una interfaz gráfica. Los metadatos gestionados por ARQODE se almacenan en formato JSON y se gestionan internamente usando la librería [Newtonsoft.Json] (https://www.nuget.org/packages/Newtonsoft.Json/).
+
+## Sistema de ficheros de ARQODE. 
+
+Cada vez que se genera una nueva aplicación en ARQODE se crea una estructura de carpetas (por defecto dentro de la carpeta "Apps" de la solución) que contiene:
+- AppData: Datos relativos a la estructura y funcionamiento del proyecto ARQODE:
+    * Ficheros descriptivos de programas y procesos.
+    * Ficheros descriptivos de vistas.
+    * Librerías
+    * Recursos    
+- Data: Datos del programa:
+    * Errores, datos de depuración y de traza de ejecución
+    * Datos globales
+
+## Exportación e importación de proyectos
+
+El proyecto ARQODE sólo mantiene activo un proyecto a la vez, por lo que para gestionar múltiples proyectos la aplicación "App manager" 
+permite exportar e importar proyectos. 
+
+De hecho cargar un proyecto "no activo" desde la "App manager" supone exportar previamente el proyecto activo (esto se hace automáticamente) a la carpeta "AppData\VS_PROJECT", que es a su vez un proyecto funcional de Visual Studio, perparado para ser compilado.
+
+La exportación del proyecto está orientada a la ejecución de la aplicación sin necesidad de cargar los metadatos de programas y procesos. Por lo que el contenido de los mismos se integra dentro del proyecto exportado. Por lo que sólo será necesario incluir la carpeta "Data" dentro de la carpeta donde se encuentre el ejecutable.
+
+## Añadir librerías de terceros al proyecto
+
+La integración de librerías no está automatizada desde el Editor de programas, se recomienda gestionar las librerías de terceros desde el getor de paquetes de Visual Studio y hacer referencia a ellas desde el fichero "Coder.cs" sin hacer el "using" de la librería previamente. Esto es, escribiendo la ruta absoluta a la funcionalidad deseada desde código.
+
+## Otras funcionalidades
+
+Hay mucha funcionalidad oculta bajo menús contextuales que es recomendable explorar, pues ayudan a:
 - La organización y a la edición de programas y procesos.
 - La creación de variables. 
 - El acceso al código fuente.
@@ -88,7 +119,8 @@ Además la barra superior incluye:
 - Un mapeador de vistas "Map UI" en ficheros json, esto permite la edición de controles gráficos en tiempo real, pues la configuración de los mismos se carga desde el fichero json.
 - Un comprobador de entradas y salidas no asignadas
 - Información de traza y errores
- 
+
+
 # Usar ARQODE
 
 1. Descargar la solución
