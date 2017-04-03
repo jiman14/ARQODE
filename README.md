@@ -18,11 +18,7 @@ AROQDE permite programar "desde dentro" de la aplicación, rodeado de los objeto
 - Acceder a la ventana de "Inmediato" para ejecutar comandos.
 
 # ¿Cómo programar con ARQODE?
-Una vez creada una aplicación en ARQODE APP Manager, esta se carga directamente en el proyecto ARQODE y se ejecuta Visual Studio con el
-programa recién creado listo para empezar a programar.
-
-La aplicación básica consta de un formulario vacío, que se recomienda editar previamente  en Visual Studio para añadir todos los 
-controles gráficos requeridos.
+Una vez creada una aplicación en ARQODE APP Manager, ésta se carga en el proyecto ARQODE y lanza la ejecución del nuevo proyecto en Visual Studio.
 
 ## Crear la estructura de la aplicación a alto nivel:
 
