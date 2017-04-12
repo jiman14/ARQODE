@@ -1,10 +1,10 @@
 # ¿Qué es ARQODE?
 ARQODE es una solución de **código abierto** complementaria a Visual Studio para **escribir aplicaciones** en tiempo real o **en tiempo de ejecución**. 
 
-Está desaroollada en C# .Net 4.6 y Visual Studio Community Edition 2017.
+Está desarrollada en C# .Net 4.6 y Visual Studio Community Edition 2017.
 
-ARQODE "amplia" la funcionalidad de Visual Studio "Edit and Continue" permitiendo salvar dos grandes limitaciones:
-1. Añádir, modificar y eliminar funciones.
+ARQODE "amplía" la funcionalidad de Visual Studio "Edit and Continue" permitiendo salvar dos grandes limitaciones:
+1. Añadir, modificar y eliminar funciones.
 2. Añadir y eliminar eventos.
 
 ARQODE consta de dos herramientas:
@@ -14,7 +14,7 @@ ARQODE consta de dos herramientas:
 # ¿Por qué programar con ARQODE?
 AROQDE permite programar "desde dentro" de la aplicación, rodeado de los objetos que necesitas cargados, con la flexibilidad de mover la línea de ejecución adelante y atrás en el tiempo. Visual Studio aporta además:
 - Revisión de errores sintácticos en tiempo real.
-- Posibiildad de volver a la línea de ejecución fallida después de un error.
+- Posibilidad de volver a la línea de ejecución fallida después de un error.
 - Acceder a la ventana de "Inmediato" para ejecutar comandos.
 
 # ¿Cómo programar con ARQODE?
@@ -45,8 +45,7 @@ Para controlar el flujo del programa hay dos recursos:
 1. Se puede detener la ejecución del programa desde el código de cualquier proceso.
 2. Se puede encolar la ejecución a un programa, para que se ejecute siempre al final añadiendo el prefijo "&" a la ruta del programa destino dentro de la configuración de la llamada al programa.
 
-Nota: las variables del programa activo se transfieren automáticamente al programa llamado, pero para que pueda hacer uso de ellas
-el proceso "hijo" debe definir variables de programa con el mismo nombre.
+Nota: las variables del programa activo se transfieren automáticamente al programa llamado, pero para que pueda hacer uso de ellas el proceso "hijo" debe definir variables de programa con el mismo nombre.
 
 ## Formularios o Vistas
 
@@ -57,8 +56,7 @@ por nombre, a demás de a sus variables de vista. El fichero mapeado se guarda e
 
 ## Codificar en ARQODE:
 
-Para lanzar la nueva aplicación y empezar a escribir código pulsar en "Run app" en el "ARQODE Program editor". Esto hará saltar un punto 
-de ruptura en el fichero "Coder.cs", que será la ventana de acceso a todo el código de la aplicación.
+Para lanzar la nueva aplicación y empezar a escribir código pulsar en "Run app" en el "ARQODE Program editor". Esto hará saltar un punto de ruptura en el fichero "Coder.cs", que será la ventana de acceso a todo el código de la aplicación.
 
 En ella se pueden ver las variables a las que tenemos acceso que principalmente permiten:
 1. Acceder a todos los controles de todos los formularios (activos).
@@ -96,12 +94,11 @@ Cada vez que se genera una nueva aplicación en ARQODE se crea una estructura de
 
 ## Exportación e importación de proyectos
 
-El proyecto ARQODE sólo mantiene activo un proyecto a la vez, por lo que para gestionar múltiples proyectos la aplicación "App manager" 
-permite exportar e importar proyectos. 
+El proyecto ARQODE sólo mantiene activo un proyecto a la vez.Para gestionar múltiples proyectos la aplicación "App manager" permite exportar e importar proyectos. 
 
-De hecho cargar un proyecto "no activo" desde la "App manager" supone exportar previamente el proyecto activo (esto se hace automáticamente) a la carpeta "AppData\VS_PROJECT", que es a su vez un proyecto funcional de Visual Studio, perparado para ser compilado.
+De hecho, cargar un proyecto "no activo" desde el **"ARQODE APP manager"** supone exportar previamente el proyecto "activo" (esto se hace automáticamente) a la carpeta "AppData\VS_PROJECT", que es a su vez un proyecto funcional de Visual Studio, listo para ser compilado.
 
-La exportación del proyecto está orientada a la ejecución de la aplicación sin necesidad de cargar los metadatos de programas y procesos. Por lo que el contenido de los mismos se integra dentro del proyecto exportado. Por lo que sólo será necesario incluir la carpeta "Data" dentro de la carpeta donde se encuentre el ejecutable.
+La exportación del proyecto está orientada a la ejecución de la aplicación sin necesidad de cargar los metadatos de programas y procesos. El contenido de los mismos se integra dentro del proyecto exportado, sólo será necesario incluir la carpeta "Data" dentro de la carpeta donde se encuentre el ejecutable.
 
 ## Añadir librerías de terceros al proyecto
 
@@ -122,7 +119,7 @@ Además la barra superior incluye:
 
 # BUGS conocidos
 
-Principalmente el mayor talón de aquiles de ARQODE es el propio motor del sistema de "Edit and continue" de Visual Studio, que requiere muchos recursos y que en determinadas situaciones se corrompe y produce un error general que obliga a reiniciar Visual Studio. Aunque una vez cargado un proyecto el reinicio es rápido, espero que Microsoft estabilice esta funcionalidad más.
+Principalmente el mayor talón de aquiles de ARQODE es el propio motor del sistema "Edit and continue" de Visual Studio, que requiere muchos recursos y que en determinadas situaciones se corrompe y produce un error general que obliga a reiniciar Visual Studio. Aunque una vez cargado un proyecto el reinicio es rápido, espero que Microsoft estabilice esta funcionalidad.
 
 El proyecto de ARQODE viene con la configuración óptima para que este fallo se produzca lo menos posible, pero es recomendable usar un equipo con más de 4GB de RAM y un procesador solvente (de gama media-alta).
 
